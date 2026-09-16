@@ -34,7 +34,28 @@ class Agent:
         intent_result = self.predict_intent(message)
         q = self.embedder.encode([message])[0]
         cases = self.retriever.search(q, k=k)
-        reply = generate_reply(message, intent_result["intent"], cases)
+        
+        # 1. Evaluate escalation FIRST (Safety-first guardrail)
         esc = decide_escalation(intent_result["confidence"], cases, message)
+        
+        # 2. Response routing: If HUMAN, suppress automated resolution and emit escalation acknowledgment
+        if esc["decision"] == "HUMAN":
+            reason = esc["reason"]
+            reply_text = (
+                f"Thank you for contacting American Airlines. Because your inquiry requires specialist review "
+                f"({reason}), we have escalated your case to a human support representative. "
+                f"Please DM your confirmation code or record locator, along with your contact phone number, "
+                f"so a specialist can assist you directly."
+            )
+            reply = {
+                "reply": reply_text,
+                "grounded": False,
+                "evidence_summary": f"Automated reply suppressed; routed to human specialist ({reason})"
+            }
+        else:
+            # 3. If AUTO-HANDLE, generate grounded resolution draft citing historical precedents
+            reply = generate_reply(message, intent_result["intent"], cases)
+            
         return {"intent": intent_result, "historical_cases": cases,
                 "reply": reply, "escalation": esc}
+

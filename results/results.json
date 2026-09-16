@@ -1,50 +1,57 @@
 {
   "majority": {
-    "accuracy": 0.09,
-    "macro_precision": 0.009,
+    "accuracy": 0.065,
+    "macro_precision": 0.006500000000000001,
     "macro_recall": 0.1,
-    "macro_f1": 0.01651376146788991,
+    "macro_f1": 0.012206572769953052,
     "n": 200
   },
   "tfidf": {
-    "accuracy": 0.86,
-    "macro_precision": 0.8818782961460446,
-    "macro_recall": 0.8686868686868687,
-    "macro_f1": 0.8642502693693672,
+    "accuracy": 0.37,
+    "macro_precision": 0.3604536836059228,
+    "macro_recall": 0.3952149604781184,
+    "macro_f1": 0.31507126418891124,
     "n": 200
   },
   "agent": {
-    "accuracy": 0.86,
-    "macro_precision": 0.8818782961460446,
-    "macro_recall": 0.8686868686868687,
-    "macro_f1": 0.8642502693693672,
+    "accuracy": 0.37,
+    "macro_precision": 0.3604536836059228,
+    "macro_recall": 0.3952149604781184,
+    "macro_f1": 0.31507126418891124,
     "n": 200
   },
   "escalation_agent": {
-    "precision": 0.4878048780487805,
+    "precision": 0.22,
     "recall": 1.0,
-    "f1": 0.6557377049180327
+    "f1": 0.36065573770491804
+  },
+  "retrieval_metrics": {
+    "mean_top1_similarity": 0.251734139919281,
+    "mean_top5_similarity": 0.19896421805769204,
+    "k": 5
   },
   "meta": {
-    "kb": 500,
-    "golden": 200,
+    "dataset": "thoughtvector/customer-support-on-twitter (TWCS)",
+    "brand": "AmericanAir",
+    "kb_size": 500,
+    "golden_size": 200,
     "embedder": "tfidf",
     "retriever": "sklearn",
     "llm_intent": false
   },
-  "judge_mean_overall": 3.95,
+  "judge_mean_overall": 3.85,
   "judge_means": {
-    "correctness": 3.565,
-    "groundedness": 5.0,
-    "helpfulness": 3.705,
-    "tone": 4.985,
-    "completeness": 3.8
+    "correctness": 3.0,
+    "groundedness": 3.375,
+    "helpfulness": 4.0,
+    "tone": 4.0,
+    "completeness": 4.0
   },
   "human_agreement": {
-    "pearson": 0.5698450390204047,
-    "quadratic_kappa": 0.2300962379702537,
+    "pearson": 0.3550358012483632,
+    "quadratic_kappa": 0.2432432432432432,
     "n": 40,
-    "mean_human": 3.525,
-    "mean_llm": 3.925
+    "mean_human": 3.75,
+    "mean_llm": 3.85
   }
 }

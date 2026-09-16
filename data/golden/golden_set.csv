@@ -1,201 +1,201 @@
 id,customer_message,true_intent,true_escalation
-1,"@AmericanAir suitcase came back broken on AA334, wheel ripped off",baggage_issue,False
-2,@AmericanAir agent at JFK was rude when I asked about AA908,customer_service,False
-3,"@AmericanAir flight AA334 cancelled and your agent was useless, contacting my lawyer about this",flight_delay_cancel,True
-4,"@AmericanAir on standby for AA221 at DCA, how do I confirm?",booking_change,False
-5,@AmericanAir website errors when I try to manage booking ABC846,website_app_issue,False
-6,"@AmericanAir need to rebook AA1502 due to emergency, what are fees?",booking_change,False
-7,@AmericanAir baggage claim line at JFK is hours long after AA334,baggage_issue,False
-8,@AmericanAir where is inbound aircraft for AA1502?,flight_status_info,False
-9,@AmericanAir is AA908 on time out of CLT?,flight_status_info,False
-10,"@AmericanAir seat 29A on AA221 won't recline, broken",seat_upgrade,False
-11,@AmericanAir what's the status of AA45 to LHR?,flight_status_info,False
-12,"@AmericanAir flight AA67 cancelled and your agent was useless, contacting my lawyer about this",flight_delay_cancel,True
-13,"@AmericanAir suitcase came back broken on AA67, wheel ripped off",baggage_issue,False
-14,@AmericanAir moved from window to middle on AA221 without asking,seat_upgrade,False
-15,@AmericanAir upgrade didn't clear on AA789 though seats open in first,seat_upgrade,False
-16,@AmericanAir miles from AA45 never posted to AAdvantage ABC434,loyalty_program,False
-17,"@AmericanAir lost my luggage at ORD, no updates on tracker",baggage_issue,False
-18,@AmericanAir miles from AA221 never posted to AAdvantage ABC486,loyalty_program,False
-19,@AmericanAir payment failed twice but card charged for AA67,website_app_issue,False
-20,"@AmericanAir bag delayed 2 days from AA123, need it delivered to hotel",baggage_issue,False
-21,"@AmericanAir flight AA45 to ORD cancelled, app shows no alternatives",flight_delay_cancel,False
-22,@AmericanAir agent at LHR was rude when I asked about AA908,customer_service,False
-23,"@AmericanAir boarding group 5 but flight AA45 nearly empty, why?",checkin_boarding,False
-24,@AmericanAir what time does AA908 land in ORD today?,flight_status_info,False
-25,@AmericanAir miles from AA789 never posted to AAdvantage ABC717,loyalty_program,False
-26,"@AmericanAir can't check in for AA908, app says see agent",checkin_boarding,False
-27,@AmericanAir website errors when I try to manage booking ABC648,website_app_issue,False
-28,@AmericanAir where is my refund for cancelled AA908? ticket ABC755,refund_compensation,False
-29,@AmericanAir will AA334 make up time? showing 6 hours late,flight_status_info,False
-30,@AmericanAir miles from AA67 never posted to AAdvantage ABC596,loyalty_program,False
-31,"@AmericanAir trying to cancel reservation ABC502, site keeps failing",booking_change,False
-32,"@AmericanAir on standby for AA123 at CLT, how do I confirm?",booking_change,False
-33,"@AmericanAir entertainment screen broken on AA789, seat 12E",seat_upgrade,False
-34,@AmericanAir agent at MIA was rude when I asked about AA334,customer_service,False
-35,"@AmericanAir voucher for AA123 never arrived, confirmation ABC420",refund_compensation,False
-36,"@AmericanAir my bag never arrived at ORD on AA1502, claim ABC199",baggage_issue,False
-37,@AmericanAir website errors when I try to manage booking ABC871,website_app_issue,False
-38,@AmericanAir check-in kiosk at DFW rejected my passport for AA221,checkin_boarding,False
-39,"@AmericanAir trying to cancel reservation ABC430, site keeps failing",booking_change,False
-40,@AmericanAir what time does AA221 land in LAX today?,flight_status_info,False
-41,@AmericanAir gold status not showing on booking ABC353 for AA1502,loyalty_program,False
-42,"@AmericanAir someone used my card fraudulently to book AA334, police report filed, fix this",refund_compensation,True
-43,"@AmericanAir flight AA1502 to MIA cancelled, app shows no alternatives",flight_delay_cancel,False
-44,"@AmericanAir I was discriminated against by crew on AA789, filing a formal complaint with authorities",customer_service,True
-45,"@AmericanAir stranded overnight in CLT with a baby after AA123 cancelled, safety issue, need hotel now plus refund plus compensation plus rebooking for 4 people tomorrow morning",booking_change,True
-46,"@AmericanAir I was discriminated against by crew on AA334, filing a formal complaint with authorities",customer_service,True
-47,@AmericanAir agent at MIA was rude when I asked about AA221,customer_service,False
-48,"@AmericanAir flight AA123 to MIA cancelled, app shows no alternatives",flight_delay_cancel,False
-49,"@AmericanAir entertainment screen broken on AA1502, seat 31F",seat_upgrade,False
-50,@AmericanAir check-in kiosk at MIA rejected my passport for AA221,checkin_boarding,False
-51,"@AmericanAir my bag never arrived at LHR on AA45, claim ABC346",baggage_issue,False
-52,@AmericanAir website errors when I try to manage booking ABC969,website_app_issue,False
-53,"@AmericanAir boarding group 5 but flight AA45 nearly empty, why?",checkin_boarding,False
-54,"@AmericanAir voucher for AA334 never arrived, confirmation ABC588",refund_compensation,False
-55,@AmericanAir boarding pass won't load for AA789 at ORD,checkin_boarding,False
-56,"@AmericanAir you cancelled AA334 last minute in DFW, need rebooking tonight",flight_delay_cancel,False
-57,"@AmericanAir app crashes at payment for AA1502, tried 3 times",website_app_issue,False
-58,@AmericanAir gold status not showing on booking ABC561 for AA908,loyalty_program,False
-59,"@AmericanAir seat 14A on AA908 won't recline, broken",seat_upgrade,False
-60,"@AmericanAir seat 32E on AA123 won't recline, broken",seat_upgrade,False
-61,@AmericanAir what's the status of AA334 to MIA?,flight_status_info,False
-62,"@AmericanAir voucher for AA908 never arrived, confirmation ABC113",refund_compensation,False
-63,@AmericanAir website errors when I try to manage booking ABC577,website_app_issue,False
-64,"@AmericanAir entertainment screen broken on AA334, seat 17B",seat_upgrade,False
-65,"@AmericanAir entertainment screen broken on AA221, seat 29F",seat_upgrade,False
-66,"@AmericanAir AA67 delayed 4 hours with no updates, crew says nothing",flight_delay_cancel,False
-67,@AmericanAir gold status not showing on booking ABC415 for AA1502,loyalty_program,False
-68,@AmericanAir moved from window to middle on AA221 without asking,seat_upgrade,False
-69,@AmericanAir my bag was opened and items missing after AA789,baggage_issue,False
-70,"@AmericanAir seat 28F on AA45 won't recline, broken",seat_upgrade,False
-71,@AmericanAir what time does AA908 land in PHX today?,flight_status_info,False
-72,@AmericanAir agent at LAX was rude when I asked about AA1502,customer_service,False
-73,@AmericanAir miles from AA45 never posted to AAdvantage ABC869,loyalty_program,False
-74,"@AmericanAir my flight AA908 from PHX to DFW was cancelled, what are my options?",flight_delay_cancel,False
-75,"@AmericanAir boarding group 5 but flight AA1502 nearly empty, why?",checkin_boarding,False
-76,@AmericanAir miles from AA334 never posted to AAdvantage ABC423,loyalty_program,False
-77,"@AmericanAir on standby for AA334 at PHX, how do I confirm?",booking_change,False
-78,@AmericanAir baggage claim line at MIA is hours long after AA45,baggage_issue,False
-79,@AmericanAir where is my refund for cancelled AA123? ticket ABC762,refund_compensation,False
-80,@AmericanAir boarding pass won't load for AA221 at DCA,checkin_boarding,False
-81,@AmericanAir will AA1502 make up time? showing 6 hours late,flight_status_info,False
-82,"@AmericanAir entertainment screen broken on AA67, seat 12F",seat_upgrade,False
-83,"@AmericanAir flight AA45 cancelled and your agent was useless, contacting my lawyer about this",flight_delay_cancel,True
-84,"@AmericanAir requested refund 3 weeks ago for AA67, no response",refund_compensation,False
-85,@AmericanAir baggage claim line at ORD is hours long after AA789,baggage_issue,False
-86,"@AmericanAir I was discriminated against by crew on AA67, filing a formal complaint with authorities",customer_service,True
-87,"@AmericanAir flight AA45 to MIA cancelled, app shows no alternatives",flight_delay_cancel,False
-88,"@AmericanAir stuck in PHX, flight AA1502 delayed 90 minutes, going to miss my connection",flight_delay_cancel,False
-89,@AmericanAir is AA1502 on time out of PHX?,flight_status_info,False
-90,"@AmericanAir seat 16B on AA334 won't recline, broken",seat_upgrade,False
-91,@AmericanAir boarding pass won't load for AA908 at ORD,checkin_boarding,False
-92,@AmericanAir website errors when I try to manage booking ABC634,website_app_issue,False
-93,@AmericanAir flight credit from AA334 doesn't work online,refund_compensation,False
-94,"@AmericanAir missed connection because AA908 was late into CLT, help",flight_delay_cancel,False
-95,@AmericanAir boarding pass won't load for AA908 at PHX,checkin_boarding,False
-96,@AmericanAir payment failed twice but card charged for AA67,website_app_issue,False
-97,"@AmericanAir stranded overnight in CLT with a baby after AA334 cancelled, safety issue, need hotel now plus refund plus compensation plus rebooking for 4 people tomorrow morning",booking_change,True
-98,@AmericanAir where is my refund for cancelled AA123? ticket ABC489,refund_compensation,False
-99,@AmericanAir website errors when I try to manage booking ABC288,website_app_issue,False
-100,@AmericanAir what time does AA221 land in JFK today?,flight_status_info,False
-101,@AmericanAir agent at PHX was rude when I asked about AA67,customer_service,False
-102,"@AmericanAir on standby for AA334 at PHX, how do I confirm?",booking_change,False
-103,"@AmericanAir flight AA1502 cancelled and your agent was useless, contacting my lawyer about this",flight_delay_cancel,True
-104,"@AmericanAir on standby for AA221 at DCA, how do I confirm?",booking_change,False
-105,@AmericanAir check-in kiosk at DCA rejected my passport for AA67,checkin_boarding,False
-106,"@AmericanAir on standby for AA1502 at PHX, how do I confirm?",booking_change,False
-107,@AmericanAir miles from AA67 never posted to AAdvantage ABC476,loyalty_program,False
-108,"@AmericanAir on standby for AA1502 at LAX, how do I confirm?",booking_change,False
-109,@AmericanAir agent at DFW was rude when I asked about AA45,customer_service,False
-110,"@AmericanAir my bag never arrived at DCA on AA123, claim ABC963",baggage_issue,False
-111,"@AmericanAir lost my luggage at LHR, no updates on tracker",baggage_issue,False
-112,"@AmericanAir bag lost with my medication inside on AA123, this is a medical emergency, need help NOW",baggage_issue,True
-113,"@AmericanAir requested refund 3 weeks ago for AA67, no response",refund_compensation,False
-114,@AmericanAir where is inbound aircraft for AA1502?,flight_status_info,False
-115,@AmericanAir check-in kiosk at JFK rejected my passport for AA45,checkin_boarding,False
-116,"@AmericanAir bag lost with my medication inside on AA123, this is a medical emergency, need help NOW",baggage_issue,True
-117,@AmericanAir agent at ORD was rude when I asked about AA45,customer_service,False
-118,"@AmericanAir lost my luggage at DFW, no updates on tracker",baggage_issue,False
-119,"@AmericanAir you cancelled AA908 last minute in LHR, need rebooking tonight",flight_delay_cancel,False
-120,"@AmericanAir boarding group 5 but flight AA45 nearly empty, why?",checkin_boarding,False
-121,"@AmericanAir trying to cancel reservation ABC229, site keeps failing",booking_change,False
-122,@AmericanAir gold status not showing on booking ABC808 for AA334,loyalty_program,False
-123,@AmericanAir gold status not showing on booking ABC239 for AA1502,loyalty_program,False
-124,@AmericanAir website errors when I try to manage booking ABC989,website_app_issue,False
-125,"@AmericanAir entertainment screen broken on AA67, seat 32E",seat_upgrade,False
-126,@AmericanAir baggage claim line at JFK is hours long after AA123,baggage_issue,False
-127,"@AmericanAir trying to cancel reservation ABC683, site keeps failing",booking_change,False
-128,@AmericanAir agent at DCA was rude when I asked about AA123,customer_service,False
-129,@AmericanAir where is my refund for cancelled AA123? ticket ABC998,refund_compensation,False
-130,"@AmericanAir flight AA45 to MIA cancelled, app shows no alternatives",flight_delay_cancel,False
-131,@AmericanAir is AA1502 on time out of PHX?,flight_status_info,False
-132,"@AmericanAir seat 34A on AA908 won't recline, broken",seat_upgrade,False
-133,"@AmericanAir stranded overnight in JFK with a baby after AA1502 cancelled, safety issue, need hotel now plus refund plus compensation plus rebooking for 4 people tomorrow morning",booking_change,True
-134,"@AmericanAir voucher for AA221 never arrived, confirmation ABC231",refund_compensation,False
-135,"@AmericanAir entertainment screen broken on AA789, seat 31E",seat_upgrade,False
-136,@AmericanAir miles from AA67 never posted to AAdvantage ABC451,loyalty_program,False
-137,"@AmericanAir someone used my card fraudulently to book AA908, police report filed, fix this",refund_compensation,True
-138,@AmericanAir what time does AA67 land in CLT today?,flight_status_info,False
-139,@AmericanAir where is my refund for cancelled AA908? ticket ABC176,refund_compensation,False
-140,@AmericanAir website errors when I try to manage booking ABC195,website_app_issue,False
-141,@AmericanAir agent at CLT was rude when I asked about AA789,customer_service,False
-142,@AmericanAir will AA45 make up time? showing 6 hours late,flight_status_info,False
-143,@AmericanAir miles from AA67 never posted to AAdvantage ABC554,loyalty_program,False
-144,@AmericanAir gold status not showing on booking ABC661 for AA908,loyalty_program,False
-145,@AmericanAir website errors when I try to manage booking ABC892,website_app_issue,False
-146,"@AmericanAir someone used my card fraudulently to book AA221, police report filed, fix this",refund_compensation,True
-147,@AmericanAir agent at JFK was rude when I asked about AA334,customer_service,False
-148,"@AmericanAir entertainment screen broken on AA1502, seat 24A",seat_upgrade,False
-149,@AmericanAir where is my refund for cancelled AA1502? ticket ABC632,refund_compensation,False
-150,@AmericanAir agent at CLT was rude when I asked about AA45,customer_service,False
-151,"@AmericanAir requested refund 3 weeks ago for AA1502, no response",refund_compensation,False
-152,@AmericanAir is AA908 on time out of CLT?,flight_status_info,False
-153,@AmericanAir check-in kiosk at PHX rejected my passport for AA908,checkin_boarding,False
-154,@AmericanAir website errors when I try to manage booking ABC683,website_app_issue,False
-155,@AmericanAir agent at JFK was rude when I asked about AA908,customer_service,False
-156,"@AmericanAir stranded overnight in PHX with a baby after AA221 cancelled, safety issue, need hotel now plus refund plus compensation plus rebooking for 4 people tomorrow morning",booking_change,True
-157,@AmericanAir boarding pass won't load for AA334 at JFK,checkin_boarding,False
-158,@AmericanAir baggage claim line at LAX is hours long after AA221,baggage_issue,False
-159,"@AmericanAir bag delayed 2 days from AA789, need it delivered to hotel",baggage_issue,False
-160,"@AmericanAir booked wrong date for AA334, need to fix to Friday",booking_change,False
-161,"@AmericanAir someone used my card fraudulently to book AA45, police report filed, fix this",refund_compensation,True
-162,@AmericanAir what time does AA123 land in PHX today?,flight_status_info,False
-163,@AmericanAir what time does AA908 land in LAX today?,flight_status_info,False
-164,@AmericanAir flight credit from AA1502 doesn't work online,refund_compensation,False
-165,"@AmericanAir can't check in for AA908, app says see agent",checkin_boarding,False
-166,@AmericanAir miles from AA45 never posted to AAdvantage ABC823,loyalty_program,False
-167,"@AmericanAir AA908 delayed 4 hours with no updates, crew says nothing",flight_delay_cancel,False
-168,"@AmericanAir missed connection because AA45 was late into ORD, help",flight_delay_cancel,False
-169,"@AmericanAir my bag never arrived at DCA on AA123, claim ABC595",baggage_issue,False
-170,@AmericanAir agent at MIA was rude when I asked about AA45,customer_service,False
-171,"@AmericanAir voucher for AA45 never arrived, confirmation ABC413",refund_compensation,False
-172,@AmericanAir agent at DCA was rude when I asked about AA789,customer_service,False
-173,"@AmericanAir diverted to DFW on AA221, now what? no staff here",flight_delay_cancel,False
-174,@AmericanAir gold status not showing on booking ABC365 for AA789,loyalty_program,False
-175,"@AmericanAir bag lost with my medication inside on AA908, this is a medical emergency, need help NOW",baggage_issue,True
-176,"@AmericanAir entertainment screen broken on AA45, seat 18F",seat_upgrade,False
-177,@AmericanAir miles from AA123 never posted to AAdvantage ABC696,loyalty_program,False
-178,"@AmericanAir flight AA45 to PHX cancelled, app shows no alternatives",flight_delay_cancel,False
-179,"@AmericanAir app crashes at payment for AA45, tried 3 times",website_app_issue,False
-180,"@AmericanAir I was discriminated against by crew on AA67, filing a formal complaint with authorities",customer_service,True
-181,"@AmericanAir my bag never arrived at CLT on AA67, claim ABC922",baggage_issue,False
-182,@AmericanAir flight credit from AA1502 doesn't work online,refund_compensation,False
-183,"@AmericanAir on standby for AA45 at JFK, how do I confirm?",booking_change,False
-184,"@AmericanAir flight AA45 to CLT cancelled, app shows no alternatives",flight_delay_cancel,False
-185,"@AmericanAir bag lost with my medication inside on AA908, this is a medical emergency, need help NOW",baggage_issue,True
-186,@AmericanAir agent at MIA was rude when I asked about AA1502,customer_service,False
-187,@AmericanAir agent at PHX was rude when I asked about AA908,customer_service,False
-188,@AmericanAir payment failed twice but card charged for AA67,website_app_issue,False
-189,"@AmericanAir my flight AA45 from ORD to DFW was cancelled, what are my options?",flight_delay_cancel,False
-190,@AmericanAir can I switch from AA334 to an earlier flight today at DCA?,booking_change,False
-191,@AmericanAir agent at DCA was rude when I asked about AA334,customer_service,False
-192,@AmericanAir boarding pass won't load for AA789 at MIA,checkin_boarding,False
-193,"@AmericanAir on standby for AA221 at CLT, how do I confirm?",booking_change,False
-194,"@AmericanAir on standby for AA908 at PHX, how do I confirm?",booking_change,False
-195,"@AmericanAir stuck in JFK, flight AA908 delayed 45 minutes, going to miss my connection",flight_delay_cancel,False
-196,@AmericanAir payment failed twice but card charged for AA67,website_app_issue,False
-197,@AmericanAir check-in kiosk at DCA rejected my passport for AA67,checkin_boarding,False
-198,"@AmericanAir trying to cancel reservation ABC133, site keeps failing",booking_change,False
-199,@AmericanAir where is my refund for cancelled AA789? ticket ABC875,refund_compensation,False
-200,"@AmericanAir app crashes at payment for AA1502, tried 3 times",website_app_issue,False
+1,Got a check in the mail today from @AmericanAir reimbursing me for the @JackBox cakes from when my luggage was lost. Hell yeah! 🙌🏻🙌🏻🙌🏻,baggage_issue,False
+2,how hard is it to run flights between NY AND DC YOU FUCKS 😑,flight_delay_cancel,True
+3,"Collossal fail. Held up are flight, worst customer service comped us 38$ for two people for dinner and breakfast.",refund_compensation,False
+4,"has new lower standards for plane cleaning: AA905.. never saw a seat so dirty: plastic, papers, food from previous flights Just FYI.... 6L",seat_upgrade,False
+5,Thanks @AmericanAir. Again. Then screwing me over on the 2nd flight because your agent was inept. Awesome.,customer_service,True
+6,didn't let me in my purchased seat due to overbooking &amp; had a 8hr layover. Instead I received $12 lunch voucher.. not cool,seat_upgrade,True
+7,I think there should be a frequent flyer program for pets. @AmericanAir,loyalty_program,False
+8,Should I b concerned they've done 2 hours of maintenance on this plane. I'm gonna die 🙄 @AmericanAir what's good They've said something about the plane being taken out of service. Any guesses on what that means for the flight? Is it possible yo get information on where to file a delay claim? My flight has been delayed a minimum 6 hours It's been rescheduled we've just been told.,flight_delay_cancel,True
+9,Hey look what was on my @AmericanAir flight today:,customer_service,False
+10,how about a free flight?,refund_compensation,False
+11,disappoints once again! Just once I would like to get home without a delay! 😡,flight_delay_cancel,False
+12,Y’all fucking suck @AmericanAir,customer_service,False
+13,"Hi. I want more information about the following images. My sister is coming to Brazil, leaving Miami. the suitcase 678 yes, the 679 was not loaded for flight AA 0929. Look the image bring her bags to the final destination. I hope the 2 bags are delivered in Sao Paulo because if she packed her bags at the check in of the american, the least you have to do is is the least you should do for her. early this morning we will see this",baggage_issue,True
+14,might be my new favorite airline after my flight to Miami. I will confirm after I make it home....,customer_service,False
+15,"- #4442 ATL-LGA arrives early. Bags unloaded,people still on plane. Multiple calls for gate agent=nothing. Becoming the norm 😖 Thanks. It's becoming the normal instead of exception with the waits 15 minutes or more.",baggage_issue,False
+16,just totally screwed this lady over...,customer_service,True
+17,could you throw me onto the upgrade list for my flight today to DCA?,seat_upgrade,False
+18,worst experience ever. Trip to U.K. Scheduled for 7:25pm and it is 3 am and still haven't left. Waiting 4 hours on catering!,flight_delay_cancel,True
+19,Will send it through now thank you,customer_service,False
+20,"Hi please start a Dulles - Barcelona direct flight, don't want to fly United. Thanks!!!",flight_status_info,False
+21,can you send please the info that is not advisable to travel to Catalonia or Barcelona ? Thanks! thanks!,flight_status_info,False
+22,Just met some of the worst @AmericanAir pre-boarding crew members ... @jetblue do you have any open 💺 to Miami. I don’t expect it to get any better. Please DM. I want a refund.,customer_service,True
+23,I bought two tickets for my friend &amp; I tomorrow but she cancelled last minuted &amp; can’t go now. Will I be charged any fees ... For her cancellation or will I get any refund?,booking_change,False
+24,"Flying too la barbade today 🤗, i have been selected for the ssss check yay @AmericanAir 😒",checkin_boarding,False
+25,"When you are on a 5:20am flight, an awesome flight crew makes a HUGE difference! Thanks @AmericanAir",customer_service,False
+26,my daughters flight from HNL to PHX was cancelled tonight. Now she can't even get her checked bag because only 1 person working,flight_delay_cancel,False
+27,"Everyone loves a ""flight delayed, we changed your flights, your new flight is cancelled, go home, come back tomorrow"" story. @AmericanAir",flight_delay_cancel,True
+28,Amazing how much it costs to fly. No more “free” second carry-on. Next they’re going to start charging for a seat cushion. @AmericanAir 😤,customer_service,False
+29,"Tonya, the @AmericanAir flight attendant from RIC to PHL this AM and yesterday from PHL to RIC is fantastic. A customer service champion.",customer_service,False
+30,wouldn’t let my wife and kids board because of pet carrier rules. “We know why u fly”? You don’t have a clue. Happy bday 2 me. VOKBUF,checkin_boarding,True
+31,Sometimes I wish airplane seats 💺 faced the window! I want to stare at this as long as it lasts - Good morning world 🌎 @AmericanAir,seat_upgrade,False
+32,Sigh... got a notice that @AmericanAir flight is delayed. Yesterday's delay made me miss connection. Today's will make me late for conf,flight_delay_cancel,False
+33,"Another day on .@AmericanAir, no power outlets or screens on an old A321. AA453, 3.5 hour flight. #platinum #garbageairlinegarbageairplanes @AmericanAir If they’re so bad, why do you keep flying with them? :) @AmericanAir No choice. Massive consolidation of airlines has eliminated choice, and I do not acknowledge the existence of United.",seat_upgrade,False
+34,"you need to send staff on the priority desk at terminal B on Not really, i just don’t think is good for you to have an unattended PRIORITY DESK.. is contradictory.",customer_service,False
+35,thank you so much for helping us out with our flight cancellation - 2 sick boys can’t travel - amazing customer service! :),customer_service,False
+36,thank you for your help in extending my time in #Paris - the extra time will do my soul good. I'm loving being in,customer_service,False
+37,"Luggage is lost and cannot even get in contact with anyone for help other than your automated response.... need help. No help, ur things says no tags #s for 2 bags, my receipt has #s. It hasn't located bags as yet. No clothes, toiletries etc. not good",baggage_issue,False
+38,Now @AmericanAir are targeting commuters with a pop-up sports lounge at Canary Wharf! via :,customer_service,False
+39,is your site not working? Been spinning for minutes,website_app_issue,False
+40,I would like to get my refund from @AmericanAir but they say it’s not theirs. Even though the charge clearly says American Airlines 🙄 I booked via so I don’t have the ticket number. However the charge says American Airlines since the flight was yours,refund_compensation,False
+41,is your new seat design able to fit anybody over six feet? Might as well ride in the wheel well or sit on a service dog's lap!,seat_upgrade,False
+42,"Hey @AmericanAir maybe you should add family boarding. Your policy at SFO for parents to ASK to board early is obnoxious. Thx for considering my suggestion. The LAST thing I have brain power for, when traveling with an infant, is to stand in ANOTHER line to ask.",checkin_boarding,False
+43,Probably asking for trouble letting these two sit next to each other 🤦,seat_upgrade,False
+44,"""It's time to check in for your flight!""",checkin_boarding,False
+45,",I’m a Mom of 10 kids-Any chance you have a Super Deal on Roundtrip tickets from the US to Europe for a Family Of 12 ? We just returned home from Europe and could only take 2 kids — the flight both ways was perfect. -",booking_change,False
+46,Today @AmericanAir showed us a 787 heading to China later today. We are so incredible thankful for your amazing employees! #leydenpride,customer_service,False
+47,Thank you @AmericanAir for your donation to getting my fellow comrads and myself to #ophardhustle We appreciate your kindness and support!,customer_service,False
+48,"T.Y. to the inflight crew on AA flight 30 LAX to JFK on 9/25/17. 5 Star Service is an understatement, they deserve 10! #bravo @AmericanAir",customer_service,False
+49,Juuuuuust made it! Thanks @AmericanAir ☺,checkin_boarding,False
+50,"MSY-MIA fare $58,1st checked bag was $25 at the counter!Got ""robbed"" $60 by AA agent at the gate for my carry on bag. Big joke @AmericanAir $25 for bigass luggage and $60 for a small carry on luggage? My airfare was cheaper than luggages! What a joke!",baggage_issue,False
+51,is that your new logo ??,customer_service,False
+52,A few of our Improvers on the @AmericanAir team had the opportunity to tour the and have an onsite lunch. #LifeAtImproving,customer_service,False
+53,"Thanks @AmericanAir! Two multi-hour flights this AM, both arriving early! #winning",customer_service,False
+54,Made Platinum on @AmericanAir for the first time ever. Do I get free pretzels on my next flight or what?,loyalty_program,False
+55,Just a couple days left of flying with @AmericanAir to for the best race of the year! Can't wait... #F1,customer_service,False
+56,Ripped with @AmericanAir in #RDU. They let one family ~25 people tie up 4 agents at baggage. Let them all skip line. missed my flight.,flight_delay_cancel,True
+57,"Hello AA, I need to add an infant on to a booking and I need to know my luggage allowance Cancun to Miami can you help please?",booking_change,False
+58,"Kuddos to @AmericanAir @ATT for great care, EXCELLENT customer service, credits, discounts, fast service to PR. SHAME on 😡",refund_compensation,False
+59,can you earn additional SWUs for segments or only EQMs?,loyalty_program,False
+60,u never seem able to expedite baggage claim. 59 mins &amp; counting. Will u tell me how sorry u are? Platitudes. Do better.,baggage_issue,False
+61,"So annoyed! When airlines keep delaying, giving a time, another, then another! Bad customer service @AmericanAir AA5305! Could have driven!",flight_delay_cancel,False
+62,Shoutout @AmericanAir for NOT moving my flight to New Orleans up TWO days in light of ANOTHER hurricane #leastfavoriteairline You “do”? There’s no travel notice there aka no options for me even though Nate is headed straight there.,flight_delay_cancel,True
+63,"I know things happen, but dang, an almost four hour delay on AA2334 ORD&gt;DFW. You guys always ruin plans that I have after.",flight_delay_cancel,False
+64,"I landed in Orlando at 3:45 PM, it’s now 4:33 and I’m STILL waiting for my bag. What in the world is going on? It’s everybody here. We’ve all been waiting. No bags have come out. I’ve never in my life waited this long for a checked bag",baggage_issue,False
+65,The shit show that @AmericanAir runs is ridiculous!!! I need an email address to make a formal complaint. This is not the forum where I wish to raise my concerns!,customer_service,True
+66,please do the decent thing &amp; add NOLA to your weather advisory list. a hurricane is on its way. let us cancel and get a refund.,booking_change,False
+67,Any updates on travel waivers for the gulf coast? #HurricaneNate,flight_delay_cancel,False
+68,does it again. Another flight another delay. #1373 #maintenance #ALWAYSSOMETHING,flight_delay_cancel,False
+69,"Once again, thanks for the free in-flight Wi-Fi. Yeehaw! 🤠 #TMobileWingman @AmericanAir",seat_upgrade,False
+70,are you going to be issuing a travel waiver for tropical storm Nate in the near future? Anything for mob,flight_delay_cancel,False
+71,it's damn near 2018 and you have flights without WiFi? What a joke. Flight UA5214. Charleston to Chicago. Can you give me a comparison on % of domestic flights with Wi-Fi compared to American/Delta? Here is more information about your WiFi instillation progress. ^NC @AmericanAir how you guys doing on Wi-Fi installation? At 100% for USA domestic?,seat_upgrade,True
+72,Prepared a decent amount of work for my flight and then I find I'm on the last @AmericanAir plane without WiFi. #sadface,seat_upgrade,False
+73,"horrendous day of traveling and the runaround from @AmericanAir, staying at and the service is INCREDIBLE!",customer_service,True
+74,you guys sucks when it comes to customer service or even to confirm wher the bags are going to claim later 2/2 and the desk at the gate B22 denied to help me find my bag (Her name Bleen) with no apologies or anything like that which sucks. its not about the app - its about confirming where the baggage claim will be as your crew said than what app says &amp; I had to run 1/2,customer_service,True
+75,"Dear @AmericanAir. Some of your airplanes are really, really, uncomfortably out of date. Like the one I'm on right now ☹️ @AmericanAir I'm afraid to tweet such things for fear that they will put me in the smallest legroom seat possible.",seat_upgrade,False
+76,Yo @AmericanAir find a tug driver to get aircraft for Flt 2225 to LAX to Gate K5 so we can get going. Trouble finding Ops staff.,flight_delay_cancel,False
+77,New 737 is on the way. Been a while but I feel like I'm home again. #UpInTheAir @AmericanAir 🛫,seat_upgrade,False
+78,"come on guys...2 flights in a row, you guys don’t put my bag on the correct flight. Not cool.",baggage_issue,False
+79,I am #38 on the upgrade list on this @americanair flight back from Dallas. Fingers crossed.,seat_upgrade,False
+80,There are 5 bins within 2 aisles of me with bin space. My bag is the same as the black one on the right.,baggage_issue,False
+81,What is your policy for moving a loyal customer when they're seated next to someone huge spilling over in to their seat?,seat_upgrade,False
+82,moved my itinerary and did not include my TSAPreCheck on the new reservation :( Would be awesome if this was fixed before my return flight. Dare I hold my breath? Thanks for the response!,checkin_boarding,False
+83,"Flt 4738 10/5 guy in 9C next to me using em &amp; txt 20 miles out, risking MY safety.. what's proper procedure to report him? Thank you!",customer_service,True
+84,please keep this aircraft (A321S) on schedule for every Thursday 6:30pm ORD to MIA (2193)! 🙌🏼 flight long 4 Boeings w/ no TVs!,seat_upgrade,False
+85,Also @AmericanAir 24 people on upgrade standby list and you put a crew member in a first class seat. You guys need to get ur ish together!!,seat_upgrade,False
+86,MADE IT!! Just ran thru the airport home alone style I MADE IT TO MY GATE! @AmericanAir,checkin_boarding,False
+87,Seriously?? Again @AmericanAir you never close my box and my equipment is all out of the box 😡😡😡,baggage_issue,False
+88,my plane sat at the gate for two hours and then u lost my luggage. i hope all ur employees die alone and scared. eat as many chodes as you can pls and thank you,baggage_issue,True
+89,is not on my good side right now... 24 minutes and counting on the phone because online check-in isn't working. #awesome,website_app_issue,False
+90,"you can imagine how much we paid for a ticket in @AmericanAir we are treated like this, shame / AA 951 JFK",customer_service,True
+91,Thank you @AmericanAir for helping me change my flight out of Honduras to Saturday #Nate,booking_change,False
+92,American Airlines is so trash.. im going back to Delta. @AmericanAir You all cancelled a flight from Charlotte to Houston due to technical issues and couldn't find another aircraft,flight_delay_cancel,True
+93,7:24A - FLT AA126 @AmericanAir - #ShotoniPhone,flight_status_info,False
+94,It's like I'm back with 56k modem...why is the wifi so terrible on every flight? #cantevencheckemail #whatamipayingfor #gogo It's terrible ^,seat_upgrade,False
+95,"AA3264 delayed until tomorrow, but the plane arrive 5+hrs ago, why did it take so long to determine a mechanical delay?",flight_delay_cancel,False
+96,100 yards short of the terminal but who's counting?,flight_delay_cancel,False
+97,"I purchased an upgraded seat for a flight today and it was supposed to have priority boarding, shows zone 5??",seat_upgrade,False
+98,"never flying American again.. always something 🤦🏽‍♀️ To stop messing up my baggage for the second time in 6 months. 🙃 I haven’t received my bag yet, I have something fragile in there, but I’ll sure to let you know",baggage_issue,False
+99,Made it to #Dallas while listening to some sick beats courtesy of @AmericanAir ✈️ Yup. I was impressed with the selection and ease of use. Well done 👌🏼,seat_upgrade,False
+100,wondering why my EP upgrade hasn’t cleared into a wide open 1st class cabin?,seat_upgrade,False
+101,Do I get a refund for changing my flight due to Tropical Storm Nate? Are you talking about our original flight that is on Saturday out of Cancun? We changed it yesterday morning from Saturday to today out of Cancun before your travel alert. Had to pay the fees.,refund_compensation,False
+102,"For anyone interested, the 763 is a 1991 build that was retired by @AmericanAir in April 2016.",flight_status_info,False
+103,but confused by this... Will I be charged for checking a bag in Minneapolis?,baggage_issue,False
+104,"another tip: if the flight is headed to MX maybe it would be good to have staff that speaks Spanish, not Asian. Just saying.",customer_service,True
+105,"Do they really think I want to leave my vacation?! I love ""volunteering"" to leave my favorite island in the world. @AmericanAir is the worst I already paid for ungraded seats for my original flight so now I am not going to get the seating that I would prefer.",seat_upgrade,False
+106,"1 HR late &amp; counting...indicator light ""glitch"" magically works again. Another bad @AmericanAir experience w/ int'l connection flights More waiting on the Tarmac to gate, horrible coordination, time is ticking on BCN connecting flight! Help ! Hoping the pilot can make up some time in flight, if not DM coming your way upon JFK arrival!",flight_delay_cancel,False
+107,"my flight (455) to Charlotte from Boston was delayed, causing me to miss my connection to Tampa. You rebooked me for tonight but I need to get there much sooner and you have earlier flights out of Charlotte available according to website. Help please!",flight_delay_cancel,False
+108,"Do I HAVE TO ESCALATE EVERY CALL TO A SUPERVISOR how do you ppl keep business running sheesh I'm good, I resolved my own issue.",customer_service,False
+109,#flight1112 on time. So glad to be home on time.,flight_status_info,False
+110,"hey, I've been trying to cancel a flight within the 24 hour deadline the last 1/2 hour. Can't do it online and your phone ppl said I'd get a call within 11-15. That was 20 minutes ago. Help please!",booking_change,False
+111,DM DM DM DM DM !! @AmericanAir,customer_service,False
+112,another delay made me miss my connection. It's becoming a routine. It's time for a change. staff doesn't seem to care.,flight_delay_cancel,True
+113,"Hi @AmericanAir do you provide any direct flights to NYC from Denver? Well I’m traveling to Denver from nyc and returning and I’m changing planes going in both directions Well I’ve flown with you guys before. Now I was wondering, can I change my departure airport from lga to jfk without being charged a fee?",booking_change,False
+114,Buyer beware- DON'T Fly @AmericanAir once again poor customer service and they basically robbed my wife out of 50 bucks #NeedMoreTraining,customer_service,False
+115,"Oh @AmericanAir. 1st really bad experience. #AA2525 to DFW closed 20 min early and gate agents can’t agree. Missed flight wasn’t my fault! @AmericanAir Rebooking telling gate agents they were wrong and that 14 peeps weren’t late. Supervisor can’t explain what happened either!! That’s not the point. Point is that gate agents are blaming me and other passengers saying it’s out fault when... @AmericanAir Hi Viktor, was this at O'hare? Literally experienced the same thing. @americanAir It was confirmed that agents closed the flight 20 minutes early without authorization. I’m VERY loyal to you guys. Is that how I’m rewarded? @AmericanAir No. La Guardia. Worst part is seeing employees fighting with each other. Some blaming passengers others defending passengers.",flight_delay_cancel,True
+116,Had my mom fly @AmericanAir yesterday... it was miserable. Flt 242. Can someone pls DM about her experience?,customer_service,False
+117,Thank you @AmericanAir for having such wonderful accommodating agents at LGA!,customer_service,False
+118,"4th @AmericanAir flight in 2 days, 4th delay, 4th no carryon after group 2. Way to go, 4th angry gate attendant. Great service! #neveragain",flight_delay_cancel,True
+119,amazing you can still charge for bags that miss flight when we arrived 2 hours early. I think I’ll charge you inconvenience fee,baggage_issue,False
+120,Thanks @AmericanAir to come through when I needed to fly out of #PR. Also #freelunch #winning,seat_upgrade,False
+121,and now you send me a notification that the flight is delayed?! WTF. I want my money back,flight_delay_cancel,False
+122,I have sat on a plane that landed for 40 minutes and missed am entire connection to Paris. This is ridiculous.,flight_delay_cancel,True
+123,How come American Airlines always has a problem. Always Late. #timetochangemymiles @AmericanAir,flight_delay_cancel,False
+124,I'm stuck on a 1 hour flight and we're now waiting in the plane before we even leave for 35 minutes- Hartford-phili 6:05 wtf We'd love some free drinks or some snacks Beers would have been better but I accept your olive branch gracefully,flight_delay_cancel,False
+125,Thanks @AmericanAir I hope 🤞 we will be ok👌 #prayfortheGulf #NATE,flight_status_info,False
+126,"AGAIN? ""Necessary"" to check my bag through, not gate check either and there WAS room! #wastingmytime #again #AmericanAirlines",baggage_issue,False
+127,your employee's working at the PHL airport were extremely rude aside from one woman who came and tended to our needs.,customer_service,True
+128,"Oh @AmericanAir where oh where is 1675...can we get some urgency, please Thanks...ill be missing my appointment 🙄",flight_delay_cancel,False
+129,Hello. I'm flying internally from Chicago to DC next month and I'd like to add two bags. How do I do this? Cheers. What's the cost on the day for one extra bag each?,baggage_issue,False
+130,"basic economy? Total BS.. like flying Spirit..won't be flying AA for a long, long time. United or SW only. ""I have choices"". maybe I'll wave mid air on my next @SouthwestAir flight but until ""basic economy"" is retired U won't be seeing me!! #wullcyaAA",seat_upgrade,False
+131,"do you offer any special accommodations for very tall passengers (6'6"" and above) who have trouble fitting in a normal seat? Great, thanks!",seat_upgrade,False
+132,"Shout out to Amy Michelle at E15 #CLT total chaos, sweetest disposition @AmericanAir #AmericanAirlines",customer_service,False
+133,Shame on you @AmericanAir for charging change fees during #HurricaneNate,booking_change,True
+134,My case number is 1-25367883998. I expect some communication about this horrible experience.,customer_service,True
+135,thank you for convincing me to canx this card. No priority boarding with a platinum card? Useless.,loyalty_program,False
+136,If anyone is looking for a great way to lose water weight fly @AmericanAir. You will sweat the whole time.,seat_upgrade,False
+137,"Sitting on a @AmericanAir plane at the gate while delayed, 55 minutes and counting, I think I need a drink",flight_delay_cancel,False
+138,what is the point of a kiosk if you still have to wait in this long line??? Can me co-worker and I have a drink pass for our flight? Glad my thirst concern is not values,checkin_boarding,False
+139,"Never buy an @AmericanAir ticket. They are #alwayslate. Second time in a week. Never again. It is another lie, there will be an update only by 5 pm. #publiclie",flight_delay_cancel,True
+140,on AA0358 &amp; are on board w/ no allowance to leave for next hr &amp; 45 min. Possible to extend drink &amp; food to coach? Serious delay,flight_delay_cancel,False
+141,is garbage. Carry on bags a no go but we won’t tell you that until you check in and then we’ll hang up on you. Yep it is but didn’t know that until check in if I had I would have purchased from @SouthwestAir no underhanded bull from them #NeverAgain,checkin_boarding,True
+142,can I have both a carry on&amp;personal item with economy(Q) &amp; economy(O) tickets? Great! Thank you for getting back to me so quickly!,checkin_boarding,False
+143,"when you’ve been sitting on the plane at the gate for over an hour Had nothing to do with clearance, but thanks for your generic response. Plane was over an hour late AND it was a maintenance delay once we boarded . Don’t lie.",flight_delay_cancel,True
+144,"...Lima, Peru not a popular destination, re AA918, 5-Oct, is still at the gate.",flight_delay_cancel,True
+145,now flt #1135 DFW-PVR is 1330? Exactly how much of my vac is your failure to schedule routine Maintainence going to take?,flight_delay_cancel,True
+146,Mother &amp; Son trip to Costa Rica!!! Thanks @americanair for the upgrade!,seat_upgrade,False
+147,Another 100% day with delays trying to get home! Thanks @AmericanAir for being consistently late! #CustomerServiceWeek #letdown.,flight_delay_cancel,False
+148,"Trying to get home early. #DC &gt; #DFW 2nd attempt @americanair standby #fingerscrossed #goinghome Thanks. So close, but so far away. Trying again on the next flight. #wingscrossed",booking_change,False
+149,"Lastly: Bye for today twitter. I'm off to grade papers then spend weekend with my soon-to-be husband. 2 weeks til the wedding! If only @AmericanAir wifi worked, I would be grading right now. It cut off- won't load Canvas. Only text and twitter. Ugh.",seat_upgrade,False
+150,Is the @AmericanAir #airpass worth it? Discuss! cc:,loyalty_program,False
+151,Hello! I was informed I can add a flight from Cathay Pacific to my AA Miles... how do I do this?,loyalty_program,False
+152,"it should be illegal for u to allow us to board a plane that has ""no functioning AC unit"" ???????",seat_upgrade,True
+153,When are you going to post more travel advisories?I'm flying into BHM tmrw &amp; want to switch to earlier flight &amp; miss bad storms,booking_change,False
+154,"I accepted only putting a bag under the seat in front of you vs overhead bin, but basic economy @AmericanAir otherwise nonnegotiable crap",seat_upgrade,False
+155,your seats keep getting tighter and tighter. Are you guys trying to be Spirit or Frontier?,seat_upgrade,False
+156,Can’t bring travel duffle bag on plane when it’s THE bag I use? Guess I’ll be using another airline. I’m not on a basic economy ticket. BTW-if some people have to bring less then others should get to bring more. At least the desk agents got it right on my return flight home.,checkin_boarding,False
+157,Still do not have an actual boarding pass for the flight that matters. I have to say I have never experienced this at @AmericanAir before.,checkin_boarding,False
+158,Thanks @AmericanAir because of your crappy mobile boarding pass I wasn't able to get on my flight with my 1 yr old by my side. 👌👌👌😕😕😕,checkin_boarding,True
+159,I have a record locator but was not ticketed by reservations...no one is helping trying to get to #puertorico,booking_change,True
+160,need help. Booked another flight on another airline after you guys changed my flight without notice. Now phone rep won't refund The social media team has always offered the best customer service st American. FTW.,refund_compensation,True
+161,"HE’S BEHIND YOU!!! When your older, big brother comes along to give you a nudge. @AmericanAir @British_Airways",seat_upgrade,False
+162,Great flight from Glasgow on @British_Airways - Looking forward for the @AmericanAir flight to Charlotte with the family! #holiday2017,flight_status_info,False
+163,Had a ✈️ on @AmericanAir that by name and bday was me but since my folks named me after my dad and the ticket didn’t say “Jr” ...he flew 😤 Classic #AAteam,checkin_boarding,True
+164,"So on @AmericanAir if you have a toddler or infant with you, you will still board w/ no priority!!! Well that did not happen at you gate in Pitt nor in Philly! Maybe it would be worth reminding them of how it should be done then! Thnx",checkin_boarding,False
+165,Basic economy is a lie and a ripoff and @AmericanAir is deliberately misleading abt baggage to get u to pay an addl $25 at gate. Never again @AmericanAir   LOL!!!!! Sooo true and soooo appropriate!,baggage_issue,False
+166,is there a limit to the number of gift cards I can use to buy a ticket?,website_app_issue,False
+167,Glad it's a night game since there is no wifi on my first flight #GoBlue!!! #bigproblems #AmericanAirlines I hope so. I fly a lot and always on AA as a platinum member. No technology on these long haul flights is not great. Thx.,seat_upgrade,False
+168,can’t wait to join you guys as a flight attendant,loyalty_program,False
+169,"One flight down, one to go with @AmericanAir, BOS-ORD-OMA #boeing #windowseat",flight_status_info,False
+170,wanna reimburse me for the 50 mile Uber I have to take to a wedding that I'm probably going to miss because of the delay to KC? Who do I inquire about that?,refund_compensation,True
+171,#flt350 @AmericanAir OMG Cynthia and Patrick were the best! We about to do NYC! #seats6a6b #voodooipa #barfbags #goingforgreat #FirstClass,seat_upgrade,False
+172,A silt flower! On board @AmericanAir,seat_upgrade,False
+173,Why is it that you assign an aircraft with no power outlets to a 5 hr and 38 minute flight (Specifically today’s flight 443)?,seat_upgrade,False
+174,Is AA still allowing travel to Cuba for People to People travel? i.e. self certified travel?,flight_status_info,False
+175,just took my $.I was checked in fly out of country had emergency in restroom and they didn’t place me in next flight . Applicable fees for almost dying in the rest room. Gross! U also were over pricing during #Irma gross!,booking_change,True
+176,So I'm in Philadelphia and my suitcase is in London! Cheers @British_Airways @AmericanAir,baggage_issue,False
+177,Beautiful double rainbow with a sunny fog/rain over downtown #Chicago as the plane descended into   @AmericanAir,flight_status_info,False
+178,Flying from #ORD today after a storm @americanair #AAmericanview,flight_status_info,False
+179,Chicago flying rainbow to match the W at Shirley Ryan   ! #ThatsCub #flytheW     @AmericanAir,flight_status_info,False
+180,Many thanks to @AmericanAir for being kind and accommodating. DFW crew got me home in front of the storm on an earlier flight with no fee.,booking_change,False
+181,Hey @AmericanAir - my profile shows my ascension to Platinum but why does my boarding pass still say Group 4 - two different systems? Thanks - it's funny because the boarding pass says Platinum but Group 4 - very weird,checkin_boarding,False
+182,the link to look up if my flight is eligible for a change (due to hurricane Nate) is broken on app and website I'm traveling from Asheville to Boston tomorrow and have a weather alert but cannot tell if flight changes are covered for my itinerary,website_app_issue,False
+183,36 hours and still no update on delayed luggage. What's going on?@AmericanAir,baggage_issue,True
+184,Rainy takeoff. PDX &gt; ORD @americanair #americanview,flight_status_info,False
+185,"my trip to Aruba is starting out bad because of you. I booked tickets in July. I was told the flight was oversold! Unless we want money more, in which case we'll sell your seat twice and then try to get you to miss flight to charge you twice.",booking_change,True
+186,was forced to check my bag at gate and found out there was plenty of room in ovrhd cmprtmnts. Get your act together.,baggage_issue,False
+187,I left a bag of Japanese souvenirs at the gate in lax. Is there a phone number I can call? Already filled out the online form,baggage_issue,False
+188,"if im exec platinum, how much for a 3rd checked bag?",baggage_issue,False
+189,Nice job @AmericanAir   45 mins on the plane waiting for a gate then 45 mins at baggage claim carousel. Still no bags.,baggage_issue,False
+190,Super disappointed that you had me check luggage despite tons of space on plane. Thx for prolonging my travel for nothing. Reviewed. Where does it say anything about approved-size luggage being refused despite avail space? Staff said they just guess if it's full.,baggage_issue,False
+191,how can i add my TSA precheck number to my boarding pass for tomorrow?,checkin_boarding,False
+192,Can you have a fake/costume gun in your carry on bag? Asking for a friend. @AmericanAir I’m dead 😂😂😂,checkin_boarding,False
+193,Thank God for @AmericanAir customer service they legit eased my anxiety by rearranging my flights to fit my schedule perfectly. Thanks again,booking_change,False
+194,missed my connection because you guys didn't fill up the previous plane enough and as you were about to take off u let drunk girl get off .. would like full refund and hotel paid for record locator pltnde,refund_compensation,True
+195,because of this experience at MIA I will be writing a formal complaint and expecting compensation.,refund_compensation,True
+196,"Hey @AmericanAir, less than 2 hours until my flight leaves MCO, very long line of people waiting to check bags, no one at the counter. Might want to work on that...",checkin_boarding,False
+197,"@AmericanAir missing 5000 flight miles from my trip to DFW last week, account number not updating",loyalty_program,False
+198,"@AmericanAir website keeps crashing when I click pay for reservation ticket, card charged twice",website_app_issue,False
+199,@AmericanAir where is my voucher refund for cancelled flight AA789? 3 weeks no status update,refund_compensation,False
+200,@AmericanAir my flight AA1502 was delayed and app not letting me change my booking for tonight,booking_change,False
