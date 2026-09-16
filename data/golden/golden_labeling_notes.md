@@ -56,4 +56,4 @@ Each real customer tweet was evaluated for human safety escalation (`true_escala
 
 ## 4. Verification and Adjudication
 
-All 200 examples were independently inspected against the taxonomy definitions in `src/intents.py`. Ambiguous cases (such as a flight delay leading to a refund request) were adjudicated based on the **primary requested customer resolution** rather than surface-level keywords.
+All 200 examples were reviewed against the taxonomy, with ambiguous cases adjudicated using the primary requested resolution (such as a flight delay leading to an explicit refund request being categorized as `refund_compensation` rather than `flight_delay_cancel`).

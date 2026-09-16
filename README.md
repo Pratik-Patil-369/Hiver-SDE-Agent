@@ -51,8 +51,7 @@ cd hiver-sde-agent
 uv venv
 source .venv/bin/activate.fish   # or source .venv/bin/activate for bash/zsh
 uv pip install -r requirements.txt
-python scripts/seed_sample.py    # Generates KB (500) + Golden (200), seed 42
-python scripts/run_evaluation.py  # Full evaluation harness (<10s)
+python scripts/run_evaluation.py  # Full evaluation harness on real TWCS benchmark (<10s)
 cat results/results.json
 ```
 
@@ -62,7 +61,7 @@ uv pip install streamlit
 streamlit run app/streamlit_app.py
 ```
 
-*(Optional: Copy `.env.example` to `.env` and set `GEMINI_API_KEY` to enable zero-shot Gemini classification, LLM response rewriting, and the Gemini judge).*
+*(The shipped 500-interaction KB `data/processed/conversations.csv` and 200-sample golden set `data/golden/golden_set.csv` are pre-built from real AmericanAir customer interactions. Optional: set `GEMINI_API_KEY` in `.env` to enable zero-shot classification and LLM judge).*
 
 ---
 
@@ -104,8 +103,8 @@ streamlit run app/streamlit_app.py
 
 - **Dataset**: `thoughtvector/customer-support-on-twitter` (~3M tweets, multi-turn conversations across dozens of brands).
 - **Selected Brand**: **AmericanAir** (`@AmericanAir`).
-  - *Rationale*: Largest volume in the dataset with rich diversity across high-impact disruption categories (delays, lost baggage, booking modifications, refunds). AmericanAir demonstrates standardized resolution phrasing (*"Please DM your record locator and flight number"*), providing high-quality ground-truth evidence for similarity retrieval.
-  - *Runner-up*: Delta / United (similar volume, but fewer direct resolution pairings in our sampled slice).
+  - *Rationale*: High conversation volume (25,000+ interactions in TWCS) with rich diversity across high-impact disruption categories (flight delays, lost baggage, booking changes, refunds). AmericanAir demonstrates standardized resolution phrasing (*"Please DM your record locator and flight number"*), providing high-quality ground-truth evidence for similarity retrieval.
+  - *Runner-up*: Delta / Southwest (similar volume, but AmericanAir had the most consistent public-to-DM transition threads).
 - **Knowledge Base**: 500 representative conversations in `data/processed/conversations.csv`. For full dataset processing, run `python scripts/download_data.py` followed by `python scripts/build_conversations.py --brand AmericanAir`.
 
 ---
@@ -166,15 +165,15 @@ Located at `data/golden/golden_set.csv`:
 | **Mean Top-1 Cosine Similarity** | **0.252** | Cosine similarity of the closest historical support resolution. |
 | **Mean Top-5 Cosine Similarity** | **0.199** | Average similarity score across the top 5 retrieved candidates. |
 
-### Response Quality: Gemini LLM-as-a-Judge (Live Benchmark)
-Evaluated across $n=40$ real customer responses using Google DeepMind's Gemini API (`gemini-3.1-flash-lite`) under a 5-dimension rubric (1–5 scale):
-- **Gemini Judge Average**: **3.80 / 5.0**
+### Response Quality: LLM-as-a-Judge Evaluation
+Evaluated across $n=40$ real customer responses using Google DeepMind's Gemini API (`gemini-3.1-flash-lite`) where available. Due to API rate limits, 31 of the 40 evaluations were scored via live Gemini API and 9 utilized the documented offline heuristic fallback:
+- **Judge Average Score**: **3.80 / 5.0**
   - **Correctness**: `3.68 / 5.0` (Accurately identifies required next operational steps)
   - **Groundedness**: `3.93 / 5.0` (Strong fidelity to historical resolution evidence)
   - **Helpfulness**: `3.63 / 5.0` (Actionable guidance; requests record locator or routing details)
   - **Tone**: `3.80 / 5.0` (Professional de-escalation of aggressive tweets)
   - **Completeness**: `3.75 / 5.0` (Addresses primary customer friction point)
-- **Detailed Evaluation Logs**: All 40 reasoning strings and dimension scores are preserved in [`results/llm_judge_results.csv`](results/llm_judge_results.csv).
+- **Detailed Evaluation Logs**: All 40 reasoning strings, individual scores, and fallback disclosures are preserved in [`results/llm_judge_results.csv`](results/llm_judge_results.csv).
 - **Human Validation Protocol**: In strict accordance with Hiver guidelines (*"Never fabricate human agreement numbers. If you couldn't run human evaluation, say so"*), human validation is not simulated. A standardized 40-item audit template is prepared in [`data/golden/human_review_template.csv`](data/golden/human_review_template.csv), with multi-rater inter-annotator agreement ($\kappa$) designated as future work.
 
 ---
@@ -323,21 +322,21 @@ hiver-sde-agent/
 ├── app/
 │   └── streamlit_app.py     # Interactive demo application
 ├── data/
-│   ├── raw/                 # Twcs.csv placeholder
-│   ├── processed/           # 500 cleaned historical conversations
-│   └── golden/              # 200 hand-labeled golden set + human scores
+│   ├── raw/                 # Raw TWCS AmericanAir sample (1,000 tweets)
+│   ├── processed/           # 500 cleaned historical conversations (KB)
+│   └── golden/              # 200 real customer tweets + audit template
 ├── evaluation/
 │   ├── baseline_majority.py # Trivial baseline
 │   ├── baseline_tfidf.py    # Simple baseline
 │   ├── llm_judge.py         # 5-dimension rubric judge
 │   ├── human_agreement.py   # Pearson r & Quadratic Kappa
 │   └── metrics.py           # Classification metrics & confusion matrix
-├── results/                 # results.json, failures.csv, confusion_*.png
+├── results/                 # results.json, failures.csv, confusion_*.png, judge_scores.csv
 ├── scripts/
-│   ├── seed_sample.py       # Deterministic sample generator (seed 42)
 │   ├── run_evaluation.py    # Full reproducible evaluation harness
-│   ├── build_conversations.py
-│   └── download_data.py
+│   ├── create_real_golden.py# Partitions holdout tweets for golden evaluation
+│   ├── build_conversations.py# Constructs multi-turn conversation threads
+│   └── download_data.py     # Pulls TWCS sample from HuggingFace
 ├── src/
 │   ├── agent.py             # Main end-to-end agent pipeline
 │   ├── config.py            # Central thresholds and parameters

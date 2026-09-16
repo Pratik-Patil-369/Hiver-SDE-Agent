@@ -71,7 +71,7 @@ The pipeline consists of four modular, decoupled components:
 ## 4. Dataset and Sampling Strategy
 
 - **Source Dataset**: Kaggle's *Customer Support on Twitter* (`thoughtvector/customer-support-on-twitter`), containing ~3M tweets with `tweet_id`, `author_id`, `inbound`, `text`, and thread linkage fields.
-- **Brand Selection**: **AmericanAir** was selected due to having the largest tweet volume (25,000+ interactions), the richest diversity of operational disruptions (weather delays, lost bags, rebookings), and highly consistent resolution patterns (*"Please DM your 6-letter record locator"*).
+- **Brand Selection**: **AmericanAir** (`@AmericanAir`) was selected due to its high volume (25,000+ interactions in TWCS), rich diversity of operational disruption scenarios (weather delays, lost luggage, rebookings), and standardized resolution patterns (*"Please DM your 6-letter record locator"*).
 - **Knowledge Base (KB)**: 500 sampled and cleaned historical AmericanAir interactions in `data/processed/conversations.csv`.
 - **Golden Evaluation Set**: 200 real customer tweets in `data/golden/golden_set.csv`, manually reviewed and adjudicated with AI-assisted pre-labeling.
   - **Stratification**: Sampled across 10 operational intents with a 22% empirical escalation rate (44 safety/legal/medical/fraud cases).
@@ -163,15 +163,15 @@ Per Hiver's evaluation guidelines (*"Never fabricate human agreement numbers. If
 - **Mean Top-5 Cosine Similarity**: **0.199**.
 - *Interpretation*: Cosine similarities in the 0.20–0.30 range are expected for sparse TF-IDF on short, noisy Twitter posts (averaging 15–30 words) matching against complete resolution threads.
 
-### Response Quality: Gemini LLM-as-a-Judge (Live API Benchmark)
-Evaluated across $n=40$ real customer responses using Google's **`gemini-3.1-flash-lite`** under our 5-dimension rubric:
+### Response Quality: LLM-as-a-Judge Evaluation
+Evaluated across $n=40$ real customer responses using Google's **`gemini-3.1-flash-lite`** where available. Due to API per-minute rate limits, 31 of the 40 evaluations were scored via live Gemini API and 9 utilized the documented offline heuristic fallback.
 - **Overall Mean Score**: **3.80 / 5.0**
   - **Correctness**: `3.68 / 5.0` (Accurately identifies required next operational steps)
   - **Groundedness**: `3.93 / 5.0` (Strong fidelity to historical resolution evidence)
   - **Helpfulness**: `3.63 / 5.0` (Actionable guidance; requests record locator or routing details)
   - **Tone**: `3.80 / 5.0` (Professional de-escalation of aggressive tweets)
   - **Completeness**: `3.75 / 5.0` (Addresses primary customer friction point)
-- **Individual Item Audits**: All 40 reasoning strings, dimension scores, and failure analyses are recorded in [`results/llm_judge_results.csv`](results/llm_judge_results.csv).
+- **Transparent Audit Records**: All 40 reasoning strings, individual dimension ratings, and fallback disclosures are preserved in [`results/llm_judge_results.csv`](results/llm_judge_results.csv).
 - **Human Agreement**: Multi-annotator inter-rater reliability (Cohen's $\kappa$) is explicitly designated as future work; audit template provided in [`data/golden/human_review_template.csv`](data/golden/human_review_template.csv).
 
 ---

@@ -1,10 +1,10 @@
 """Intent taxonomy for AmericanAir, derived from twcs brand sample.
 
-Method: sampled ~500 AmericanAir customer tweets (see notebooks/01_eda.py +
-scripts/sample_for_intents.py), clustered by TF-IDF + manual review, then
-collapsed to 10 mutually-distinguishable intents. Each has 5+ real examples
-in data/processed/intent_discovery_sample.csv (when built from real data) and
-in the shipped sample conversations.
+Method: analyzed AmericanAir customer tweets via TF-IDF + K-Means clustering (see
+notebooks/01_intent_discovery.ipynb and notebooks/01_intent_discovery.py) with
+manual domain review, collapsed to 10 mutually-distinguishable operational intents.
+Each intent is grounded in genuine historical support conversations in
+data/processed/conversations.csv and evaluated on data/golden/golden_set.csv.
 """
 INTENTS = [
     {"name": "flight_delay_cancel",
