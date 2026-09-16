@@ -1,4 +1,5 @@
 """Escalation: rule-based by default (transparent + testable), not pure LLM vibes."""
+import re
 from src.config import INTENT_CONFIDENCE_THRESHOLD, RETRIEVAL_SIMILARITY_THRESHOLD
 
 RISKY_TERMS = ["lawyer", "legal", "fraud", "scam", "chargeback", "police",
@@ -15,7 +16,7 @@ def decide_escalation(intent_confidence: float, retrieval_results, customer_mess
     elif retrieval_results[0]["score"] < RETRIEVAL_SIMILARITY_THRESHOLD:
         reasons.append(f"Weak historical similarity ({retrieval_results[0]['score']:.2f} < {RETRIEVAL_SIMILARITY_THRESHOLD})")
     low = customer_message.lower()
-    hits = [t for t in RISKY_TERMS if t in low]
+    hits = [t for t in RISKY_TERMS if re.search(r"\b" + re.escape(t), low)]
     if hits:
         reasons.append(f"Potential high-risk issue ({', '.join(hits)})")
     # very long / multi-issue messages are harder to auto-handle safely
