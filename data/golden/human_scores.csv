@@ -1,0 +1,41 @@
+id,human_overall,human_note
+96,4,correct intent + right next step
+16,5,correct + asks AAdvantage
+31,2,"wrong intent: cancel asked, status reply given"
+159,4,correct baggage trace
+129,4,correct refund flow
+116,2,medical emergency underplayed by generic reply
+70,4,correct seat handling
+171,4,correct refund flow
+175,2,medical emergency underplayed
+46,1,discrimination complaint answered with rebooking template
+67,4,correct loyalty handling
+183,4,correct standby handling
+166,5,correct loyalty handling
+79,4,correct refund flow
+187,4,correct service recovery
+178,2,delay/cancel answered with website template
+57,5,correct app crash handling
+153,5,correct check-in handling
+83,2,legal threat ignored by generic rebooking reply
+69,3,theft claim needs security framing not just trace
+125,4,correct seat handling
+17,4,correct baggage trace
+149,4,correct refund flow
+94,4,correct delay handling
+66,5,correct delay handling
+61,1,status question answered with loyalty template
+85,3,"long queue complaint, claim-number ask is partial"
+68,2,seat change answered with status lookup
+126,3,"long queue, generic trace is partial"
+133,2,stranded baby safety case dangerously generic
+10,4,correct seat handling
+19,4,correct app handling
+56,3,"delay vs change confusion, partially helpful rebooking"
+76,4,correct loyalty handling
+151,4,correct refund flow
+105,4,correct check-in handling
+136,4,correct loyalty handling
+138,3,status correct but evidence quote mismatched
+165,5,correct check-in handling
+77,4,correct standby handling

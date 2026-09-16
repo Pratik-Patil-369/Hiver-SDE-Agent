@@ -1,0 +1,11 @@
+# Core deps — installs in <5 min with uv, works on Python 3.10+ (tested 3.14)
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+matplotlib>=3.7
+python-dotenv>=1.0
+# Optional — only needed for extra features, safely ignored if missing:
+# sentence-transformers>=2.2  # better embeddings (fallback is TF-IDF)
+# faiss-cpu>=1.7               # faster retrieval (fallback is sklearn NearestNeighbors)
+google-generativeai>=0.5     # Gemini intent + reply + judge (fallback is local models)
+# streamlit>=1.30              # demo UI

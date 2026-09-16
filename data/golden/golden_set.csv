@@ -1,0 +1,201 @@
+id,customer_message,true_intent,true_escalation
+1,"@AmericanAir suitcase came back broken on AA334, wheel ripped off",baggage_issue,False
+2,@AmericanAir agent at JFK was rude when I asked about AA908,customer_service,False
+3,"@AmericanAir flight AA334 cancelled and your agent was useless, contacting my lawyer about this",flight_delay_cancel,True
+4,"@AmericanAir on standby for AA221 at DCA, how do I confirm?",booking_change,False
+5,@AmericanAir website errors when I try to manage booking ABC846,website_app_issue,False
+6,"@AmericanAir need to rebook AA1502 due to emergency, what are fees?",booking_change,False
+7,@AmericanAir baggage claim line at JFK is hours long after AA334,baggage_issue,False
+8,@AmericanAir where is inbound aircraft for AA1502?,flight_status_info,False
+9,@AmericanAir is AA908 on time out of CLT?,flight_status_info,False
+10,"@AmericanAir seat 29A on AA221 won't recline, broken",seat_upgrade,False
+11,@AmericanAir what's the status of AA45 to LHR?,flight_status_info,False
+12,"@AmericanAir flight AA67 cancelled and your agent was useless, contacting my lawyer about this",flight_delay_cancel,True
+13,"@AmericanAir suitcase came back broken on AA67, wheel ripped off",baggage_issue,False
+14,@AmericanAir moved from window to middle on AA221 without asking,seat_upgrade,False
+15,@AmericanAir upgrade didn't clear on AA789 though seats open in first,seat_upgrade,False
+16,@AmericanAir miles from AA45 never posted to AAdvantage ABC434,loyalty_program,False
+17,"@AmericanAir lost my luggage at ORD, no updates on tracker",baggage_issue,False
+18,@AmericanAir miles from AA221 never posted to AAdvantage ABC486,loyalty_program,False
+19,@AmericanAir payment failed twice but card charged for AA67,website_app_issue,False
+20,"@AmericanAir bag delayed 2 days from AA123, need it delivered to hotel",baggage_issue,False
+21,"@AmericanAir flight AA45 to ORD cancelled, app shows no alternatives",flight_delay_cancel,False
+22,@AmericanAir agent at LHR was rude when I asked about AA908,customer_service,False
+23,"@AmericanAir boarding group 5 but flight AA45 nearly empty, why?",checkin_boarding,False
+24,@AmericanAir what time does AA908 land in ORD today?,flight_status_info,False
+25,@AmericanAir miles from AA789 never posted to AAdvantage ABC717,loyalty_program,False
+26,"@AmericanAir can't check in for AA908, app says see agent",checkin_boarding,False
+27,@AmericanAir website errors when I try to manage booking ABC648,website_app_issue,False
+28,@AmericanAir where is my refund for cancelled AA908? ticket ABC755,refund_compensation,False
+29,@AmericanAir will AA334 make up time? showing 6 hours late,flight_status_info,False
+30,@AmericanAir miles from AA67 never posted to AAdvantage ABC596,loyalty_program,False
+31,"@AmericanAir trying to cancel reservation ABC502, site keeps failing",booking_change,False
+32,"@AmericanAir on standby for AA123 at CLT, how do I confirm?",booking_change,False
+33,"@AmericanAir entertainment screen broken on AA789, seat 12E",seat_upgrade,False
+34,@AmericanAir agent at MIA was rude when I asked about AA334,customer_service,False
+35,"@AmericanAir voucher for AA123 never arrived, confirmation ABC420",refund_compensation,False
+36,"@AmericanAir my bag never arrived at ORD on AA1502, claim ABC199",baggage_issue,False
+37,@AmericanAir website errors when I try to manage booking ABC871,website_app_issue,False
+38,@AmericanAir check-in kiosk at DFW rejected my passport for AA221,checkin_boarding,False
+39,"@AmericanAir trying to cancel reservation ABC430, site keeps failing",booking_change,False
+40,@AmericanAir what time does AA221 land in LAX today?,flight_status_info,False
+41,@AmericanAir gold status not showing on booking ABC353 for AA1502,loyalty_program,False
+42,"@AmericanAir someone used my card fraudulently to book AA334, police report filed, fix this",refund_compensation,True
+43,"@AmericanAir flight AA1502 to MIA cancelled, app shows no alternatives",flight_delay_cancel,False
+44,"@AmericanAir I was discriminated against by crew on AA789, filing a formal complaint with authorities",customer_service,True
+45,"@AmericanAir stranded overnight in CLT with a baby after AA123 cancelled, safety issue, need hotel now plus refund plus compensation plus rebooking for 4 people tomorrow morning",booking_change,True
+46,"@AmericanAir I was discriminated against by crew on AA334, filing a formal complaint with authorities",customer_service,True
+47,@AmericanAir agent at MIA was rude when I asked about AA221,customer_service,False
+48,"@AmericanAir flight AA123 to MIA cancelled, app shows no alternatives",flight_delay_cancel,False
+49,"@AmericanAir entertainment screen broken on AA1502, seat 31F",seat_upgrade,False
+50,@AmericanAir check-in kiosk at MIA rejected my passport for AA221,checkin_boarding,False
+51,"@AmericanAir my bag never arrived at LHR on AA45, claim ABC346",baggage_issue,False
+52,@AmericanAir website errors when I try to manage booking ABC969,website_app_issue,False
+53,"@AmericanAir boarding group 5 but flight AA45 nearly empty, why?",checkin_boarding,False
+54,"@AmericanAir voucher for AA334 never arrived, confirmation ABC588",refund_compensation,False
+55,@AmericanAir boarding pass won't load for AA789 at ORD,checkin_boarding,False
+56,"@AmericanAir you cancelled AA334 last minute in DFW, need rebooking tonight",flight_delay_cancel,False
+57,"@AmericanAir app crashes at payment for AA1502, tried 3 times",website_app_issue,False
+58,@AmericanAir gold status not showing on booking ABC561 for AA908,loyalty_program,False
+59,"@AmericanAir seat 14A on AA908 won't recline, broken",seat_upgrade,False
+60,"@AmericanAir seat 32E on AA123 won't recline, broken",seat_upgrade,False
+61,@AmericanAir what's the status of AA334 to MIA?,flight_status_info,False
+62,"@AmericanAir voucher for AA908 never arrived, confirmation ABC113",refund_compensation,False
+63,@AmericanAir website errors when I try to manage booking ABC577,website_app_issue,False
+64,"@AmericanAir entertainment screen broken on AA334, seat 17B",seat_upgrade,False
+65,"@AmericanAir entertainment screen broken on AA221, seat 29F",seat_upgrade,False
+66,"@AmericanAir AA67 delayed 4 hours with no updates, crew says nothing",flight_delay_cancel,False
+67,@AmericanAir gold status not showing on booking ABC415 for AA1502,loyalty_program,False
+68,@AmericanAir moved from window to middle on AA221 without asking,seat_upgrade,False
+69,@AmericanAir my bag was opened and items missing after AA789,baggage_issue,False
+70,"@AmericanAir seat 28F on AA45 won't recline, broken",seat_upgrade,False
+71,@AmericanAir what time does AA908 land in PHX today?,flight_status_info,False
+72,@AmericanAir agent at LAX was rude when I asked about AA1502,customer_service,False
+73,@AmericanAir miles from AA45 never posted to AAdvantage ABC869,loyalty_program,False
+74,"@AmericanAir my flight AA908 from PHX to DFW was cancelled, what are my options?",flight_delay_cancel,False
+75,"@AmericanAir boarding group 5 but flight AA1502 nearly empty, why?",checkin_boarding,False
+76,@AmericanAir miles from AA334 never posted to AAdvantage ABC423,loyalty_program,False
+77,"@AmericanAir on standby for AA334 at PHX, how do I confirm?",booking_change,False
+78,@AmericanAir baggage claim line at MIA is hours long after AA45,baggage_issue,False
+79,@AmericanAir where is my refund for cancelled AA123? ticket ABC762,refund_compensation,False
+80,@AmericanAir boarding pass won't load for AA221 at DCA,checkin_boarding,False
+81,@AmericanAir will AA1502 make up time? showing 6 hours late,flight_status_info,False
+82,"@AmericanAir entertainment screen broken on AA67, seat 12F",seat_upgrade,False
+83,"@AmericanAir flight AA45 cancelled and your agent was useless, contacting my lawyer about this",flight_delay_cancel,True
+84,"@AmericanAir requested refund 3 weeks ago for AA67, no response",refund_compensation,False
+85,@AmericanAir baggage claim line at ORD is hours long after AA789,baggage_issue,False
+86,"@AmericanAir I was discriminated against by crew on AA67, filing a formal complaint with authorities",customer_service,True
+87,"@AmericanAir flight AA45 to MIA cancelled, app shows no alternatives",flight_delay_cancel,False
+88,"@AmericanAir stuck in PHX, flight AA1502 delayed 90 minutes, going to miss my connection",flight_delay_cancel,False
+89,@AmericanAir is AA1502 on time out of PHX?,flight_status_info,False
+90,"@AmericanAir seat 16B on AA334 won't recline, broken",seat_upgrade,False
+91,@AmericanAir boarding pass won't load for AA908 at ORD,checkin_boarding,False
+92,@AmericanAir website errors when I try to manage booking ABC634,website_app_issue,False
+93,@AmericanAir flight credit from AA334 doesn't work online,refund_compensation,False
+94,"@AmericanAir missed connection because AA908 was late into CLT, help",flight_delay_cancel,False
+95,@AmericanAir boarding pass won't load for AA908 at PHX,checkin_boarding,False
+96,@AmericanAir payment failed twice but card charged for AA67,website_app_issue,False
+97,"@AmericanAir stranded overnight in CLT with a baby after AA334 cancelled, safety issue, need hotel now plus refund plus compensation plus rebooking for 4 people tomorrow morning",booking_change,True
+98,@AmericanAir where is my refund for cancelled AA123? ticket ABC489,refund_compensation,False
+99,@AmericanAir website errors when I try to manage booking ABC288,website_app_issue,False
+100,@AmericanAir what time does AA221 land in JFK today?,flight_status_info,False
+101,@AmericanAir agent at PHX was rude when I asked about AA67,customer_service,False
+102,"@AmericanAir on standby for AA334 at PHX, how do I confirm?",booking_change,False
+103,"@AmericanAir flight AA1502 cancelled and your agent was useless, contacting my lawyer about this",flight_delay_cancel,True
+104,"@AmericanAir on standby for AA221 at DCA, how do I confirm?",booking_change,False
+105,@AmericanAir check-in kiosk at DCA rejected my passport for AA67,checkin_boarding,False
+106,"@AmericanAir on standby for AA1502 at PHX, how do I confirm?",booking_change,False
+107,@AmericanAir miles from AA67 never posted to AAdvantage ABC476,loyalty_program,False
+108,"@AmericanAir on standby for AA1502 at LAX, how do I confirm?",booking_change,False
+109,@AmericanAir agent at DFW was rude when I asked about AA45,customer_service,False
+110,"@AmericanAir my bag never arrived at DCA on AA123, claim ABC963",baggage_issue,False
+111,"@AmericanAir lost my luggage at LHR, no updates on tracker",baggage_issue,False
+112,"@AmericanAir bag lost with my medication inside on AA123, this is a medical emergency, need help NOW",baggage_issue,True
+113,"@AmericanAir requested refund 3 weeks ago for AA67, no response",refund_compensation,False
+114,@AmericanAir where is inbound aircraft for AA1502?,flight_status_info,False
+115,@AmericanAir check-in kiosk at JFK rejected my passport for AA45,checkin_boarding,False
+116,"@AmericanAir bag lost with my medication inside on AA123, this is a medical emergency, need help NOW",baggage_issue,True
+117,@AmericanAir agent at ORD was rude when I asked about AA45,customer_service,False
+118,"@AmericanAir lost my luggage at DFW, no updates on tracker",baggage_issue,False
+119,"@AmericanAir you cancelled AA908 last minute in LHR, need rebooking tonight",flight_delay_cancel,False
+120,"@AmericanAir boarding group 5 but flight AA45 nearly empty, why?",checkin_boarding,False
+121,"@AmericanAir trying to cancel reservation ABC229, site keeps failing",booking_change,False
+122,@AmericanAir gold status not showing on booking ABC808 for AA334,loyalty_program,False
+123,@AmericanAir gold status not showing on booking ABC239 for AA1502,loyalty_program,False
+124,@AmericanAir website errors when I try to manage booking ABC989,website_app_issue,False
+125,"@AmericanAir entertainment screen broken on AA67, seat 32E",seat_upgrade,False
+126,@AmericanAir baggage claim line at JFK is hours long after AA123,baggage_issue,False
+127,"@AmericanAir trying to cancel reservation ABC683, site keeps failing",booking_change,False
+128,@AmericanAir agent at DCA was rude when I asked about AA123,customer_service,False
+129,@AmericanAir where is my refund for cancelled AA123? ticket ABC998,refund_compensation,False
+130,"@AmericanAir flight AA45 to MIA cancelled, app shows no alternatives",flight_delay_cancel,False
+131,@AmericanAir is AA1502 on time out of PHX?,flight_status_info,False
+132,"@AmericanAir seat 34A on AA908 won't recline, broken",seat_upgrade,False
+133,"@AmericanAir stranded overnight in JFK with a baby after AA1502 cancelled, safety issue, need hotel now plus refund plus compensation plus rebooking for 4 people tomorrow morning",booking_change,True
+134,"@AmericanAir voucher for AA221 never arrived, confirmation ABC231",refund_compensation,False
+135,"@AmericanAir entertainment screen broken on AA789, seat 31E",seat_upgrade,False
+136,@AmericanAir miles from AA67 never posted to AAdvantage ABC451,loyalty_program,False
+137,"@AmericanAir someone used my card fraudulently to book AA908, police report filed, fix this",refund_compensation,True
+138,@AmericanAir what time does AA67 land in CLT today?,flight_status_info,False
+139,@AmericanAir where is my refund for cancelled AA908? ticket ABC176,refund_compensation,False
+140,@AmericanAir website errors when I try to manage booking ABC195,website_app_issue,False
+141,@AmericanAir agent at CLT was rude when I asked about AA789,customer_service,False
+142,@AmericanAir will AA45 make up time? showing 6 hours late,flight_status_info,False
+143,@AmericanAir miles from AA67 never posted to AAdvantage ABC554,loyalty_program,False
+144,@AmericanAir gold status not showing on booking ABC661 for AA908,loyalty_program,False
+145,@AmericanAir website errors when I try to manage booking ABC892,website_app_issue,False
+146,"@AmericanAir someone used my card fraudulently to book AA221, police report filed, fix this",refund_compensation,True
+147,@AmericanAir agent at JFK was rude when I asked about AA334,customer_service,False
+148,"@AmericanAir entertainment screen broken on AA1502, seat 24A",seat_upgrade,False
+149,@AmericanAir where is my refund for cancelled AA1502? ticket ABC632,refund_compensation,False
+150,@AmericanAir agent at CLT was rude when I asked about AA45,customer_service,False
+151,"@AmericanAir requested refund 3 weeks ago for AA1502, no response",refund_compensation,False
+152,@AmericanAir is AA908 on time out of CLT?,flight_status_info,False
+153,@AmericanAir check-in kiosk at PHX rejected my passport for AA908,checkin_boarding,False
+154,@AmericanAir website errors when I try to manage booking ABC683,website_app_issue,False
+155,@AmericanAir agent at JFK was rude when I asked about AA908,customer_service,False
+156,"@AmericanAir stranded overnight in PHX with a baby after AA221 cancelled, safety issue, need hotel now plus refund plus compensation plus rebooking for 4 people tomorrow morning",booking_change,True
+157,@AmericanAir boarding pass won't load for AA334 at JFK,checkin_boarding,False
+158,@AmericanAir baggage claim line at LAX is hours long after AA221,baggage_issue,False
+159,"@AmericanAir bag delayed 2 days from AA789, need it delivered to hotel",baggage_issue,False
+160,"@AmericanAir booked wrong date for AA334, need to fix to Friday",booking_change,False
+161,"@AmericanAir someone used my card fraudulently to book AA45, police report filed, fix this",refund_compensation,True
+162,@AmericanAir what time does AA123 land in PHX today?,flight_status_info,False
+163,@AmericanAir what time does AA908 land in LAX today?,flight_status_info,False
+164,@AmericanAir flight credit from AA1502 doesn't work online,refund_compensation,False
+165,"@AmericanAir can't check in for AA908, app says see agent",checkin_boarding,False
+166,@AmericanAir miles from AA45 never posted to AAdvantage ABC823,loyalty_program,False
+167,"@AmericanAir AA908 delayed 4 hours with no updates, crew says nothing",flight_delay_cancel,False
+168,"@AmericanAir missed connection because AA45 was late into ORD, help",flight_delay_cancel,False
+169,"@AmericanAir my bag never arrived at DCA on AA123, claim ABC595",baggage_issue,False
+170,@AmericanAir agent at MIA was rude when I asked about AA45,customer_service,False
+171,"@AmericanAir voucher for AA45 never arrived, confirmation ABC413",refund_compensation,False
+172,@AmericanAir agent at DCA was rude when I asked about AA789,customer_service,False
+173,"@AmericanAir diverted to DFW on AA221, now what? no staff here",flight_delay_cancel,False
+174,@AmericanAir gold status not showing on booking ABC365 for AA789,loyalty_program,False
+175,"@AmericanAir bag lost with my medication inside on AA908, this is a medical emergency, need help NOW",baggage_issue,True
+176,"@AmericanAir entertainment screen broken on AA45, seat 18F",seat_upgrade,False
+177,@AmericanAir miles from AA123 never posted to AAdvantage ABC696,loyalty_program,False
+178,"@AmericanAir flight AA45 to PHX cancelled, app shows no alternatives",flight_delay_cancel,False
+179,"@AmericanAir app crashes at payment for AA45, tried 3 times",website_app_issue,False
+180,"@AmericanAir I was discriminated against by crew on AA67, filing a formal complaint with authorities",customer_service,True
+181,"@AmericanAir my bag never arrived at CLT on AA67, claim ABC922",baggage_issue,False
+182,@AmericanAir flight credit from AA1502 doesn't work online,refund_compensation,False
+183,"@AmericanAir on standby for AA45 at JFK, how do I confirm?",booking_change,False
+184,"@AmericanAir flight AA45 to CLT cancelled, app shows no alternatives",flight_delay_cancel,False
+185,"@AmericanAir bag lost with my medication inside on AA908, this is a medical emergency, need help NOW",baggage_issue,True
+186,@AmericanAir agent at MIA was rude when I asked about AA1502,customer_service,False
+187,@AmericanAir agent at PHX was rude when I asked about AA908,customer_service,False
+188,@AmericanAir payment failed twice but card charged for AA67,website_app_issue,False
+189,"@AmericanAir my flight AA45 from ORD to DFW was cancelled, what are my options?",flight_delay_cancel,False
+190,@AmericanAir can I switch from AA334 to an earlier flight today at DCA?,booking_change,False
+191,@AmericanAir agent at DCA was rude when I asked about AA334,customer_service,False
+192,@AmericanAir boarding pass won't load for AA789 at MIA,checkin_boarding,False
+193,"@AmericanAir on standby for AA221 at CLT, how do I confirm?",booking_change,False
+194,"@AmericanAir on standby for AA908 at PHX, how do I confirm?",booking_change,False
+195,"@AmericanAir stuck in JFK, flight AA908 delayed 45 minutes, going to miss my connection",flight_delay_cancel,False
+196,@AmericanAir payment failed twice but card charged for AA67,website_app_issue,False
+197,@AmericanAir check-in kiosk at DCA rejected my passport for AA67,checkin_boarding,False
+198,"@AmericanAir trying to cancel reservation ABC133, site keeps failing",booking_change,False
+199,@AmericanAir where is my refund for cancelled AA789? ticket ABC875,refund_compensation,False
+200,"@AmericanAir app crashes at payment for AA1502, tried 3 times",website_app_issue,False
