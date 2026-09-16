@@ -219,13 +219,33 @@ Honest engineering requires scrutinizing benchmark numbers:
 
 ---
 
-## 11. Engineering Decision Log
+## 11. Technical Report & Decision Log
 
-See [`decision_log.md`](decision_log.md) for 15 documented engineering decisions, alternatives considered, reasons for rejection, and architectural trade-offs.
+- **Full Formal Report**: See [`REPORT.md`](REPORT.md) for the complete 14-section formal technical evaluation report.
+- **Engineering Decision Log**: See [`decision_log.md`](decision_log.md) for the 15 documented engineering decisions, alternatives considered, reasons for rejection, and architectural trade-offs.
 
 ---
 
-## 12. Repository Structure
+## 12. Citations & Attributions (Assignment Rule Compliance)
+
+Per the assignment rules (*"Cite anything you borrowed. Borrowing is fine; not knowing what you borrowed is not."*):
+
+1. **Primary Dataset**:
+   - Kaggle: `thoughtvector/customer-support-on-twitter` (Customer Support on Twitter). ~3M tweets between brands and consumers.
+2. **Intent Taxonomy Reference**:
+   - Hugging Face PolyAI: `PolyAI/banking77` (Casanueva et al., 2020) referenced for domain-specific fine-grained intent structuring methodology.
+3. **Core ML Libraries & Algorithms**:
+   - **Scikit-learn**: Pedregosa et al., JMLR 12, pp. 2825-2830, 2011 (`TfidfVectorizer`, `LogisticRegression`, `ConfusionMatrixDisplay`, `cohen_kappa_score`).
+   - **FAISS**: Johnson, Douze, Jégou, *Billion-scale similarity search with GPUs*, IEEE Transactions on Big Data, 2017 (`IndexFlatIP` inner-product cosine search).
+   - **Sentence-Transformers**: Reimers & Gurevych, *Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks*, EMNLP 2019 (`all-MiniLM-L6-v2`).
+4. **LLM Foundation API**:
+   - Google DeepMind Gemini API (`gemini-2.5-flash`) via `google-generativeai` for zero-shot classification, historical response conditioning, and LLM-as-a-judge evaluation.
+5. **AI Coding Assistance**:
+   - Antigravity / Gemini Code Assist utilized for test harness scaffolding, data pipeline synthesis, and code review per assignment guidelines (*"You may use AI coding assistants freely"*).
+
+---
+
+## 13. Repository Structure
 
 ```
 hiver-sde-agent/
@@ -256,7 +276,9 @@ hiver-sde-agent/
 │   ├── response_generator.py# Grounded response drafting
 │   └── intent_classifier.py # TF-IDF / Gemini intent classification
 ├── decision_log.md          # 15 non-obvious engineering decisions
+├── REPORT.md                # 14-section formal technical evaluation report
 ├── requirements.txt         # Core dependencies
-└── README.md                # Technical report
+└── README.md                # Main documentation & report summary
 ```
+
 
