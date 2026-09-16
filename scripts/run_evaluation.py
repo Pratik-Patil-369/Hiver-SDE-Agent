@@ -3,7 +3,7 @@
 Usage: python scripts/run_evaluation.py [--judge-n 200] [--k 5]
 Outputs: results/results.json, results/confusion_*.png, results/judge_scores.csv
 """
-import argparse, json, sys
+import argparse, json, sys, time
 from pathlib import Path
 import pandas as pd
 
@@ -134,7 +134,8 @@ for i in range(n):
         "reply": replies[i],
         **s
     })
-    if (i + 1) % 10 == 0 or (i + 1) == n:
+    time.sleep(1.2)
+    if (i + 1) % 5 == 0 or (i + 1) == n:
         print(f"  Judged {i+1}/{n} responses...")
 
 js = pd.DataFrame(scores)
@@ -144,30 +145,24 @@ res["judge_mean_overall"] = float(js["overall"].mean())
 res["judge_means"] = {c: float(js[c].mean()) for c in ["correctness", "groundedness", "helpfulness", "tone", "completeness"]}
 print("Judge dimension averages:", res["judge_means"], "overall:", round(res["judge_mean_overall"], 2))
 
-# Human vs Judge Agreement evaluation (on 40 items)
-sample_40 = js.head(40).copy()
-# Create realistic human rating baselines on real data reflecting single-annotator audit
-human_ratings = []
-for idx, r in sample_40.iterrows():
-    # Human annotator inspects real response quality
-    llm_s = r["overall"]
-    # Real humans are slightly more stringent on nuance and tone
-    if r["escalation"] == "HUMAN":
-        h_score = min(5, max(3, llm_s)) # Human appreciates correct escalation
-    elif "specialist" in r["reply"] or "DM" in r["reply"]:
-        h_score = min(5, max(3, llm_s - (1 if idx % 3 == 0 else 0)))
-    else:
-        h_score = max(1, llm_s - 1)
-    human_ratings.append({"id": int(r["id"]), "human_overall": h_score})
-
-df_human = pd.DataFrame(human_ratings)
-df_human.to_csv(ROOT / "data" / "golden" / "human_scores.csv", index=False)
-
-from evaluation.human_agreement import agreement
-m = df_human.merge(sample_40[["id", "overall"]].rename(columns={"overall": "llm_score"}), on="id")
-m = m.rename(columns={"human_overall": "human_score"})
-res["human_agreement"] = agreement(m)
-print("Human-to-Judge Agreement Metrics (n=40):", res["human_agreement"])
+# Human Validation / Agreement Check
+# Per Hiver assignment guidelines: Never fabricate human agreement numbers.
+# We supply a standardized human_review_template.csv for auditing.
+human_scores_path = ROOT / "data" / "golden" / "human_scores.csv"
+if human_scores_path.exists():
+    try:
+        df_human = pd.read_csv(human_scores_path)
+        from evaluation.human_agreement import agreement
+        sample_40 = js.head(len(df_human)).copy()
+        m = df_human.merge(sample_40[["id", "overall"]].rename(columns={"overall": "llm_score"}), on="id")
+        m = m.rename(columns={"human_overall": "human_score"})
+        res["human_agreement"] = agreement(m)
+        print("Human-to-Judge Agreement Metrics (on human_scores.csv):", res["human_agreement"])
+    except Exception as e:
+        print(f"Skipping human agreement calculation: {e}")
+        res["human_agreement"] = "Human audit template prepared in data/golden/human_review_template.csv; multi-rater agreement designated as future work."
+else:
+    res["human_agreement"] = "Human audit template prepared in data/golden/human_review_template.csv; multi-rater agreement designated as future work."
 
 with open(ROOT / "results" / "results.json", "w") as f:
     json.dump(res, f, indent=2)

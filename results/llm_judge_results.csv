@@ -1,918 +1,239 @@
 id,true_intent,pred_intent,escalation,customer_message,reply,correctness,groundedness,helpfulness,tone,completeness,overall,reason
-1,baggage_issue,baggage_issue,HUMAN,Got a check in the mail today from @AmericanAir reimbursing me for the @JackBox cakes from when my luggage was lost. Hell yeah! 🙌🏻🙌🏻🙌🏻,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.20 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.104 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 7.635615702s. [links {
+1,baggage_issue,baggage_issue,HUMAN,Got a check in the mail today from @AmericanAir reimbursing me for the @JackBox cakes from when my luggage was lost. Hell yeah! 🙌🏻🙌🏻🙌🏻,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.20 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",2,1,1,3,1,1.6,"The AI failed to recognize the customer's post as a positive testimonial and instead treated it as an active complaint requiring escalation. The response is disconnected from the context, ignores the customer's positive sentiment, and inappropriately requests personal information for an issue that has already been resolved."
+2,flight_delay_cancel,flight_status_info,HUMAN,how hard is it to run flights between NY AND DC YOU FUCKS 😑,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.14 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",5,5,4,5,4,4.6,"The AI handled an aggressive, low-intent inquiry professionally by de-escalating the conversation and providing a clear, actionable path to resolution, avoiding engagement with the customer's hostile language."
+3,refund_compensation,customer_service,HUMAN,"Collossal fail. Held up are flight, worst customer service comped us 38$ for two people for dinner and breakfast.","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.45 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",4,5,4,3,4,4.0,"The response is accurate and asks for necessary information, but the inclusion of the internal confidence score meta-data is inappropriate for a customer-facing message. It lacks the empathetic tone seen in the historical evidence."
+4,seat_upgrade,seat_upgrade,HUMAN,"has new lower standards for plane cleaning: AA905.. never saw a seat so dirty: plastic, papers, food from previous flights Just FYI.... 6L","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.16 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",4,5,4,4,4,4.2,"The AI response is professional and appropriately redirects the complaint to a human for resolution, as it lacks the internal tools to process flight-specific service failures. It avoids the irrelevant tone of the historical evidence examples."
+5,customer_service,flight_delay_cancel,HUMAN,Thanks @AmericanAir. Again. Then screwing me over on the 2nd flight because your agent was inept. Awesome.,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.14 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",5,5,4,3,4,4.2,"The AI correctly identifies its limitations regarding the customer's frustration and provides a clear, actionable path to resolution. While the tone is professional, it is somewhat mechanical and lacks the empathy needed for a customer expressing anger ('screwing me over')."
+6,seat_upgrade,refund_compensation,HUMAN,didn't let me in my purchased seat due to overbooking &amp; had a 8hr layover. Instead I received $12 lunch voucher.. not cool,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.17 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",5,5,4,5,4,4.6,"The response is professional, transparent about its limitations, and provides a clear, actionable path for the customer to receive human assistance. It avoids the hallucinated policies seen in the historical evidence."
+7,loyalty_program,flight_status_info,HUMAN,I think there should be a frequent flyer program for pets. @AmericanAir,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.19 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,2,4,3,3.0,"The AI correctly identifies its inability to handle the request, but the escalation instruction is excessive for a feature suggestion. Requesting a PNR/confirmation code for a general feedback/feature request is confusing for the customer and creates unnecessary friction."
+8,flight_delay_cancel,flight_delay_cancel,HUMAN,Should I b concerned they've done 2 hours of maintenance on this plane. I'm gonna die 🙄 @AmericanAir what's good They've said something about the plane being taken out of service. Any guesses on what that means for the flight? Is it possible yo get information on where to file a delay claim? My flight has been delayed a minimum 6 hours It's been rescheduled we've just been told.,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.13 < 0.55); Long multi-part message, needs human review), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",5,5,4,4,4,4.4,"The response effectively triages a complex, multi-faceted customer query by escalating to a human, which is the most responsible action given the customer's distress and the technical nature of the maintenance/delay concerns. While it is efficient and accurate, it lacks a brief word of empathy regarding the anxiety expressed by the customer."
+9,customer_service,flight_status_info,HUMAN,Hey look what was on my @AmericanAir flight today:,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.21 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",2,3,2,3,3,2.6,"The response is overly robotic and includes internal metadata (low intent confidence) that should never be visible to a customer. While it asks for necessary information, the lack of human-like empathy in acknowledging the customer's social media post makes it feel cold and impersonal."
+10,refund_compensation,flight_delay_cancel,HUMAN,how about a free flight?,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.16 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",5,5,5,5,5,5.0,"The response is professional, transparent about the escalation process, and provides a clear, actionable path for the customer to receive assistance."
+11,flight_delay_cancel,flight_delay_cancel,HUMAN,disappoints once again! Just once I would like to get home without a delay! 😡,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.15 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,5,4,4,4,4.0,"The AI correctly identifies its inability to handle the request with high confidence and provides a clear, actionable path for the customer to receive human assistance. While it lacks deep empathy, it avoids the errors and inconsistency seen in the historical evidence."
+12,customer_service,flight_status_info,HUMAN,Y’all fucking suck @AmericanAir,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.21 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,5,4,3,4,3.8,"The response is grounded and actionable, but it fails to maintain the brand voice by transparently disclosing internal AI confidence scores to the customer, which is unprofessional and jarring."
+13,baggage_issue,baggage_issue,HUMAN,"Hi. I want more information about the following images. My sister is coming to Brazil, leaving Miami. the suitcase 678 yes, the 679 was not loaded for flight AA 0929. Look the image bring her bags to the final destination. I hope the 2 bags are delivered in Sao Paulo because if she packed her bags at the check in of the american, the least you have to do is is the least you should do for her. early this morning we will see this","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.19 < 0.55); Long multi-part message, needs human review), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",5,5,4,5,4,4.6,"The AI correctly identified the complexity of the issue and its own limitations, properly escalating the case to a human agent. It provided a clear, actionable instruction for the customer to follow to resolve the baggage dispute."
+14,customer_service,baggage_issue,HUMAN,might be my new favorite airline after my flight to Miami. I will confirm after I make it home....,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.15 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",2,5,2,3,3,2.5,"The customer's message is a positive expression of brand loyalty, not an inquiry requiring 'specialist review.' The AI inappropriately escalated a sentiment-based social media post as if it were a technical support request, creating unnecessary friction."
+15,baggage_issue,baggage_issue,HUMAN,"- #4442 ATL-LGA arrives early. Bags unloaded,people still on plane. Multiple calls for gate agent=nothing. Becoming the norm 😖 Thanks. It's becoming the normal instead of exception with the waits 15 minutes or more.","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.15 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",5,5,4,4,4,4.4,"The response is safe, accurate, and transparent about the escalation process. While slightly robotic, it avoids the errors seen in the 'historical evidence' examples (which contained irrelevant responses about lost luggage and incorrect flight numbers) and correctly identifies the need for human intervention."
+16,customer_service,flight_status_info,HUMAN,just totally screwed this lady over...,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.17 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",5,5,5,4,5,4.8,"The response is highly professional and pragmatic. By acknowledging the low confidence score and escalating to a human, it avoids generic scripted responses that might further frustrate the customer. The tone is neutral and efficient, though slightly clinical."
+17,seat_upgrade,seat_upgrade,HUMAN,could you throw me onto the upgrade list for my flight today to DCA?,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.14 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",4,3,4,4,4,3.8,"The response is professional and actionable, but it includes unnecessary technical jargon regarding 'Low intent confidence' which should be hidden from the customer. It correctly redirects to a human specialist for account-sensitive actions."
+18,flight_delay_cancel,refund_compensation,HUMAN,worst experience ever. Trip to U.K. Scheduled for 7:25pm and it is 3 am and still haven't left. Waiting 4 hours on catering!,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.15 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",5,5,4,5,4,4.6,"The response is professional, safe, and transparent about the need for human intervention. It avoids making unsupported promises and provides a clear, actionable path for the customer to get resolution."
+19,customer_service,flight_status_info,HUMAN,Will send it through now thank you,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.15 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",4,5,4,3,5,4.2,"The response is accurate, grounded in the context of needing human assistance, and provides clear next steps. The tone is functional but lacks the brand warmth established in the historical evidence."
+20,flight_status_info,flight_status_info,HUMAN,"Hi please start a Dulles - Barcelona direct flight, don't want to fly United. Thanks!!!","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.18 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,2,2,4,3,2.8,"The AI unnecessarily exposes internal confidence scores to the customer and requests a confirmation code for a general feedback request (starting a new route), which is illogical as there is no flight to confirm. While professional, the process is not helpful for the user's specific request."
+21,flight_status_info,flight_status_info,HUMAN,can you send please the info that is not advisable to travel to Catalonia or Barcelona ? Thanks! thanks!,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.13 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",5,5,4,5,4,4.6,"The AI correctly identifies its inability to handle a complex advisory query, escalates appropriately, and uses a professional, polite tone. It is concise, though it could have been slightly more helpful by acknowledging the nature of the request rather than explicitly citing the confidence score."
+22,customer_service,refund_compensation,HUMAN,Just met some of the worst @AmericanAir pre-boarding crew members ... @jetblue do you have any open 💺 to Miami. I don’t expect it to get any better. Please DM. I want a refund.,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.16 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",5,5,5,4,5,4.8,"The AI correctly identifies its own limitation regarding a customer service complaint, avoids making speculative claims, and provides a clear, actionable path for the customer to receive assistance from a human agent."
+23,booking_change,refund_compensation,HUMAN,I bought two tickets for my friend &amp; I tomorrow but she cancelled last minuted &amp; can’t go now. Will I be charged any fees ... For her cancellation or will I get any refund?,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.19 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",4,5,4,4,3,4.0,"The response is safe and appropriately redirects the user to a human agent given the low confidence score. It lacks specific policy information regarding refunds/cancellation fees, but avoids making unsupported claims."
+24,checkin_boarding,flight_status_info,HUMAN,"Flying too la barbade today 🤗, i have been selected for the ssss check yay @AmericanAir 😒","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.18 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",4,3,4,3,4,3.6,"The AI response is actionable and clear, but it fails in tone by explicitly stating the 'low intent confidence' internal technical metadata to the customer, which is unprofessional and jarring. It correctly identifies the need for human escalation based on the complex nature of SSSS screenings."
+25,customer_service,seat_upgrade,HUMAN,"When you are on a 5:20am flight, an awesome flight crew makes a HUGE difference! Thanks @AmericanAir","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.15 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",2,2,1,2,2,1.4,"The AI failed to recognize a positive customer sentiment. Instead of acknowledging the praise, it treated the compliment as a support ticket requiring escalation to a human, which is inefficient, impersonal, and disrupts the customer experience."
+26,flight_delay_cancel,baggage_issue,HUMAN,my daughters flight from HNL to PHX was cancelled tonight. Now she can't even get her checked bag because only 1 person working,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.17 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4.0,"heuristic: overlap=0.082 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite
+Please retry in 41.25670144s. [links {
   description: ""Learn more about Gemini API quotas""
   url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
 }
 , violations {
   quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-3.5-flash-lite""
+    value: ""gemini-3.1-flash-lite""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 500
+  quota_value: 15
 }
 , retry_delay {
-  seconds: 7
+  seconds: 41
 }
 ])"
-2,flight_delay_cancel,flight_status_info,HUMAN,how hard is it to run flights between NY AND DC YOU FUCKS 😑,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.14 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4,"heuristic: overlap=0.047 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 7.302304316s. [links {
+27,flight_delay_cancel,flight_delay_cancel,HUMAN,"Everyone loves a ""flight delayed, we changed your flights, your new flight is cancelled, go home, come back tomorrow"" story. @AmericanAir","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.28 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4.0,"heuristic: overlap=0.093 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite
+Please retry in 39.729645201s. [links {
   description: ""Learn more about Gemini API quotas""
   url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
 }
 , violations {
   quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-3.5-flash-lite""
+    value: ""gemini-3.1-flash-lite""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 500
+  quota_value: 15
 }
 , retry_delay {
-  seconds: 7
+  seconds: 39
 }
 ])"
-3,refund_compensation,customer_service,HUMAN,"Collossal fail. Held up are flight, worst customer service comped us 38$ for two people for dinner and breakfast.","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.45 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.091 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 6.997845869s. [links {
+28,customer_service,baggage_issue,HUMAN,Amazing how much it costs to fly. No more “free” second carry-on. Next they’re going to start charging for a seat cushion. @AmericanAir 😤,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.16 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4.0,"heuristic: overlap=0.061 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite
+Please retry in 38.203244754s. [links {
   description: ""Learn more about Gemini API quotas""
   url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
 }
 , violations {
   quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-3.5-flash-lite""
+    value: ""gemini-3.1-flash-lite""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 500
+  quota_value: 15
 }
 , retry_delay {
-  seconds: 6
+  seconds: 38
 }
 ])"
-4,seat_upgrade,seat_upgrade,HUMAN,"has new lower standards for plane cleaning: AA905.. never saw a seat so dirty: plastic, papers, food from previous flights Just FYI.... 6L","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.16 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4,"heuristic: overlap=0.061 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 6.697196746s. [links {
+29,customer_service,customer_service,HUMAN,"Tonya, the @AmericanAir flight attendant from RIC to PHL this AM and yesterday from PHL to RIC is fantastic. A customer service champion.","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.28 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4.0,"heuristic: overlap=0.094 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite
+Please retry in 36.671596459s. [links {
   description: ""Learn more about Gemini API quotas""
   url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
 }
 , violations {
   quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-3.5-flash-lite""
+    value: ""gemini-3.1-flash-lite""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 500
+  quota_value: 15
 }
 , retry_delay {
-  seconds: 6
+  seconds: 36
 }
 ])"
-5,customer_service,flight_delay_cancel,HUMAN,Thanks @AmericanAir. Again. Then screwing me over on the 2nd flight because your agent was inept. Awesome.,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.14 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.102 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 6.379329015s. [links {
+30,checkin_boarding,flight_delay_cancel,HUMAN,wouldn’t let my wife and kids board because of pet carrier rules. “We know why u fly”? You don’t have a clue. Happy bday 2 me. VOKBUF,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.14 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4.0,"heuristic: overlap=0.105 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite
+Please retry in 35.153401468s. [links {
   description: ""Learn more about Gemini API quotas""
   url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
 }
 , violations {
   quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-3.5-flash-lite""
+    value: ""gemini-3.1-flash-lite""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 500
+  quota_value: 15
 }
 , retry_delay {
-  seconds: 6
+  seconds: 35
 }
 ])"
-6,seat_upgrade,refund_compensation,HUMAN,didn't let me in my purchased seat due to overbooking &amp; had a 8hr layover. Instead I received $12 lunch voucher.. not cool,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.17 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,2,4,4,4,3,"heuristic: overlap=0.020 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 5.988216379s. [links {
+31,seat_upgrade,seat_upgrade,HUMAN,Sometimes I wish airplane seats 💺 faced the window! I want to stare at this as long as it lasts - Good morning world 🌎 @AmericanAir,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.17 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4.0,"heuristic: overlap=0.037 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite
+Please retry in 33.626670571s. [links {
   description: ""Learn more about Gemini API quotas""
   url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
 }
 , violations {
   quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-3.5-flash-lite""
+    value: ""gemini-3.1-flash-lite""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 500
+  quota_value: 15
 }
 , retry_delay {
-  seconds: 5
+  seconds: 33
 }
 ])"
-7,loyalty_program,flight_status_info,HUMAN,I think there should be a frequent flyer program for pets. @AmericanAir,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.19 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4,"heuristic: overlap=0.058 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 5.680302648s. [links {
+32,flight_delay_cancel,flight_delay_cancel,HUMAN,Sigh... got a notice that @AmericanAir flight is delayed. Yesterday's delay made me miss connection. Today's will make me late for conf,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.17 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4.0,"heuristic: overlap=0.109 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite
+Please retry in 31.802068327s. [links {
   description: ""Learn more about Gemini API quotas""
   url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
 }
 , violations {
   quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-3.5-flash-lite""
+    value: ""gemini-3.1-flash-lite""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 500
+  quota_value: 15
 }
 , retry_delay {
-  seconds: 5
+  seconds: 31
 }
 ])"
-8,flight_delay_cancel,flight_delay_cancel,HUMAN,Should I b concerned they've done 2 hours of maintenance on this plane. I'm gonna die 🙄 @AmericanAir what's good They've said something about the plane being taken out of service. Any guesses on what that means for the flight? Is it possible yo get information on where to file a delay claim? My flight has been delayed a minimum 6 hours It's been rescheduled we've just been told.,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.13 < 0.55); Long multi-part message, needs human review), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.091 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 5.377812128s. [links {
+33,seat_upgrade,flight_status_info,HUMAN,"Another day on .@AmericanAir, no power outlets or screens on an old A321. AA453, 3.5 hour flight. #platinum #garbageairlinegarbageairplanes @AmericanAir If they’re so bad, why do you keep flying with them? :) @AmericanAir No choice. Massive consolidation of airlines has eliminated choice, and I do not acknowledge the existence of United.","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.15 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4.0,"heuristic: overlap=0.037 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite
+Please retry in 30.179258938s. [links {
   description: ""Learn more about Gemini API quotas""
   url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
 }
 , violations {
   quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-3.5-flash-lite""
+    value: ""gemini-3.1-flash-lite""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 500
+  quota_value: 15
 }
 , retry_delay {
-  seconds: 5
+  seconds: 30
 }
 ])"
-9,customer_service,flight_status_info,HUMAN,Hey look what was on my @AmericanAir flight today:,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.21 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,2,4,4,4,3,"heuristic: overlap=0.020 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 5.069615551s. [links {
+34,customer_service,flight_status_info,HUMAN,"you need to send staff on the priority desk at terminal B on Not really, i just don’t think is good for you to have an unattended PRIORITY DESK.. is contradictory.","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.13 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4.0,"heuristic: overlap=0.062 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite
+Please retry in 28.641594112s. [links {
   description: ""Learn more about Gemini API quotas""
   url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
 }
 , violations {
   quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-3.5-flash-lite""
+    value: ""gemini-3.1-flash-lite""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 500
+  quota_value: 15
 }
 , retry_delay {
-  seconds: 5
+  seconds: 28
 }
 ])"
-10,refund_compensation,flight_delay_cancel,HUMAN,how about a free flight?,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.16 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.070 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 4.767418368s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 4
-}
-])"
-11,flight_delay_cancel,flight_delay_cancel,HUMAN,disappoints once again! Just once I would like to get home without a delay! 😡,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.15 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,2,4,4,4,3,"heuristic: overlap=0.027 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 4.361127296s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 4
-}
-])"
-12,customer_service,flight_status_info,HUMAN,Y’all fucking suck @AmericanAir,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.21 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.078 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 4.052150452s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 4
-}
-])"
-13,baggage_issue,baggage_issue,HUMAN,"Hi. I want more information about the following images. My sister is coming to Brazil, leaving Miami. the suitcase 678 yes, the 679 was not loaded for flight AA 0929. Look the image bring her bags to the final destination. I hope the 2 bags are delivered in Sao Paulo because if she packed her bags at the check in of the american, the least you have to do is is the least you should do for her. early this morning we will see this","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.19 < 0.55); Long multi-part message, needs human review), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4,"heuristic: overlap=0.056 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 3.754571341s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 3
-}
-])"
-14,customer_service,baggage_issue,HUMAN,might be my new favorite airline after my flight to Miami. I will confirm after I make it home....,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.15 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4,"heuristic: overlap=0.035 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 3.443317339s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 3
-}
-])"
-15,baggage_issue,baggage_issue,HUMAN,"- #4442 ATL-LGA arrives early. Bags unloaded,people still on plane. Multiple calls for gate agent=nothing. Becoming the norm 😖 Thanks. It's becoming the normal instead of exception with the waits 15 minutes or more.","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.15 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4,"heuristic: overlap=0.060 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 3.12462261s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 3
-}
-])"
-16,customer_service,flight_status_info,HUMAN,just totally screwed this lady over...,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.17 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,2,4,4,4,3,"heuristic: overlap=0.000 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 2.82388457s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 2
-}
-])"
-17,seat_upgrade,seat_upgrade,HUMAN,could you throw me onto the upgrade list for my flight today to DCA?,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.14 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.103 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 2.325284543s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 2
-}
-])"
-18,flight_delay_cancel,refund_compensation,HUMAN,worst experience ever. Trip to U.K. Scheduled for 7:25pm and it is 3 am and still haven't left. Waiting 4 hours on catering!,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.15 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.082 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 1.619490524s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 1
-}
-])"
-19,customer_service,flight_status_info,HUMAN,Will send it through now thank you,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.15 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,2,4,4,4,3,"heuristic: overlap=0.000 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 1.323272478s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 1
-}
-])"
-20,flight_status_info,flight_status_info,HUMAN,"Hi please start a Dulles - Barcelona direct flight, don't want to fly United. Thanks!!!","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.18 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4,"heuristic: overlap=0.061 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 1.020892465s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 1
-}
-])"
-21,flight_status_info,flight_status_info,HUMAN,can you send please the info that is not advisable to travel to Catalonia or Barcelona ? Thanks! thanks!,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.13 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.100 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 715.476121ms. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-}
-])"
-22,customer_service,refund_compensation,HUMAN,Just met some of the worst @AmericanAir pre-boarding crew members ... @jetblue do you have any open 💺 to Miami. I don’t expect it to get any better. Please DM. I want a refund.,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.16 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4,"heuristic: overlap=0.049 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 398.024003ms. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-}
-])"
-23,booking_change,refund_compensation,HUMAN,I bought two tickets for my friend &amp; I tomorrow but she cancelled last minuted &amp; can’t go now. Will I be charged any fees ... For her cancellation or will I get any refund?,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.19 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.074 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 93.333186ms. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-}
-])"
-24,checkin_boarding,flight_status_info,HUMAN,"Flying too la barbade today 🤗, i have been selected for the ssss check yay @AmericanAir 😒","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.18 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.094 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 59.797690566s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 59
-}
-])"
-25,customer_service,seat_upgrade,HUMAN,"When you are on a 5:20am flight, an awesome flight crew makes a HUGE difference! Thanks @AmericanAir","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.15 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,2,4,4,4,3,"heuristic: overlap=0.000 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 59.487101514s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 59
-}
-])"
-26,flight_delay_cancel,baggage_issue,HUMAN,my daughters flight from HNL to PHX was cancelled tonight. Now she can't even get her checked bag because only 1 person working,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.17 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.082 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 59.193427117s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 59
-}
-])"
-27,flight_delay_cancel,flight_delay_cancel,HUMAN,"Everyone loves a ""flight delayed, we changed your flights, your new flight is cancelled, go home, come back tomorrow"" story. @AmericanAir","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.28 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.093 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 58.883547024s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 58
-}
-])"
-28,customer_service,baggage_issue,HUMAN,Amazing how much it costs to fly. No more “free” second carry-on. Next they’re going to start charging for a seat cushion. @AmericanAir 😤,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.16 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4,"heuristic: overlap=0.061 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 58.582046776s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 58
-}
-])"
-29,customer_service,customer_service,HUMAN,"Tonya, the @AmericanAir flight attendant from RIC to PHL this AM and yesterday from PHL to RIC is fantastic. A customer service champion.","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.28 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.094 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 58.2672843s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 58
-}
-])"
-30,checkin_boarding,flight_delay_cancel,HUMAN,wouldn’t let my wife and kids board because of pet carrier rules. “We know why u fly”? You don’t have a clue. Happy bday 2 me. VOKBUF,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.14 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.105 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 57.96736917s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 57
-}
-])"
-31,seat_upgrade,seat_upgrade,HUMAN,Sometimes I wish airplane seats 💺 faced the window! I want to stare at this as long as it lasts - Good morning world 🌎 @AmericanAir,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.17 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4,"heuristic: overlap=0.037 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 57.664425448s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 57
-}
-])"
-32,flight_delay_cancel,flight_delay_cancel,HUMAN,Sigh... got a notice that @AmericanAir flight is delayed. Yesterday's delay made me miss connection. Today's will make me late for conf,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.17 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.109 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 57.361697288s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 57
-}
-])"
-33,seat_upgrade,flight_status_info,HUMAN,"Another day on .@AmericanAir, no power outlets or screens on an old A321. AA453, 3.5 hour flight. #platinum #garbageairlinegarbageairplanes @AmericanAir If they’re so bad, why do you keep flying with them? :) @AmericanAir No choice. Massive consolidation of airlines has eliminated choice, and I do not acknowledge the existence of United.","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.15 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4,"heuristic: overlap=0.037 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 57.052025157s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 57
-}
-])"
-34,customer_service,flight_status_info,HUMAN,"you need to send staff on the priority desk at terminal B on Not really, i just don’t think is good for you to have an unattended PRIORITY DESK.. is contradictory.","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.13 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4,"heuristic: overlap=0.062 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 56.74980592s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 56
-}
-])"
-35,customer_service,customer_service,HUMAN,thank you so much for helping us out with our flight cancellation - 2 sick boys can’t travel - amazing customer service! :),"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.30 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.078 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 56.459138334s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 56
-}
-])"
-36,customer_service,flight_status_info,HUMAN,thank you for your help in extending my time in #Paris - the extra time will do my soul good. I'm loving being in,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.17 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4,"heuristic: overlap=0.053 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 56.14578065s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 56
-}
-])"
-37,baggage_issue,baggage_issue,HUMAN,"Luggage is lost and cannot even get in contact with anyone for help other than your automated response.... need help. No help, ur things says no tags #s for 2 bags, my receipt has #s. It hasn't located bags as yet. No clothes, toiletries etc. not good","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.27 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,5,4,4,4,4,"heuristic: overlap=0.133 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 55.736042785s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 55
-}
-])"
-38,customer_service,website_app_issue,HUMAN,Now @AmericanAir are targeting commuters with a pop-up sports lounge at Canary Wharf! via :,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.17 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.098 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 55.2320103s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 55
-}
-])"
-39,website_app_issue,website_app_issue,HUMAN,is your site not working? Been spinning for minutes,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.17 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,4,4,4,4,4,"heuristic: overlap=0.115 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 54.725897307s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 54
-}
-])"
-40,refund_compensation,website_app_issue,HUMAN,I would like to get my refund from @AmericanAir but they say it’s not theirs. Even though the charge clearly says American Airlines 🙄 I booked via so I don’t have the ticket number. However the charge says American Airlines since the flight was yours,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.15 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,3,4,4,4,4,"heuristic: overlap=0.059 (LLM fallback: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
-Please retry in 54.218030001s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
-  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
-  quota_dimensions {
-    key: ""model""
-    value: ""gemini-3.5-flash-lite""
-  }
-  quota_dimensions {
-    key: ""location""
-    value: ""global""
-  }
-  quota_value: 500
-}
-, retry_delay {
-  seconds: 54
-}
-])"
+35,customer_service,customer_service,HUMAN,thank you so much for helping us out with our flight cancellation - 2 sick boys can’t travel - amazing customer service! :),"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.30 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",2,3,2,3,2,2.4,"The AI failed to recognize the customer's sentiment, treating a 'thank you' message as a technical inquiry requiring escalation. The response is robotic, ignores the customer's expression of gratitude, and forces an unnecessary support process on a resolved issue."
+36,customer_service,flight_status_info,HUMAN,thank you for your help in extending my time in #Paris - the extra time will do my soul good. I'm loving being in,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.17 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,2,3,3,4,3.0,"The AI response is functional but robotic and fails to match the warm, empathetic brand voice demonstrated in the historical evidence. Including the internal 'Low intent confidence' metadata is inappropriate for a customer-facing interaction."
+37,baggage_issue,baggage_issue,HUMAN,"Luggage is lost and cannot even get in contact with anyone for help other than your automated response.... need help. No help, ur things says no tags #s for 2 bags, my receipt has #s. It hasn't located bags as yet. No clothes, toiletries etc. not good","Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.27 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",4,3,4,3,3,3.4,"The response is actionable and moves the customer toward a resolution, but the inclusion of internal technical metadata ('Low intent confidence') is inappropriate for a customer-facing message. It also lacks the empathy required for a distressed passenger who has lost their luggage."
+38,customer_service,website_app_issue,HUMAN,Now @AmericanAir are targeting commuters with a pop-up sports lounge at Canary Wharf! via :,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.17 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",3,2,2,3,3,2.6,"The AI exposed internal confidence scores to the customer, which is unprofessional and breaks brand experience. While the instructions are actionable, the response fails to acknowledge the customer's comment about the pop-up lounge, making it feel like a canned, generic deflection rather than a genuine engagement."
+39,website_app_issue,website_app_issue,HUMAN,is your site not working? Been spinning for minutes,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.17 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",4,3,4,4,4,3.8,"The AI correctly identifies the need for escalation due to low confidence but includes an unnecessary and unprofessional mention of internal confidence thresholds in the customer-facing message. It is actionable and polite, but the meta-commentary detracts from the professional tone."
+40,refund_compensation,website_app_issue,HUMAN,I would like to get my refund from @AmericanAir but they say it’s not theirs. Even though the charge clearly says American Airlines 🙄 I booked via so I don’t have the ticket number. However the charge says American Airlines since the flight was yours,"Thank you for contacting American Airlines. Because your inquiry requires specialist review (Low intent confidence (0.15 < 0.55)), we have escalated your case to a human support representative. Please DM your confirmation code or record locator, along with your contact phone number, so a specialist can assist you directly.",5,5,5,4,4,4.6,"The AI correctly identifies its inability to handle the complex, multi-party refund issue and provides a clear, actionable path forward for the customer by requesting necessary information for a human agent."

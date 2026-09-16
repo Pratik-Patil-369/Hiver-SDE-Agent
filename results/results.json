@@ -39,19 +39,13 @@
     "retriever": "sklearn",
     "llm_intent": false
   },
-  "judge_mean_overall": 3.85,
+  "judge_mean_overall": 3.7974999999999994,
   "judge_means": {
-    "correctness": 3.0,
-    "groundedness": 3.375,
-    "helpfulness": 4.0,
-    "tone": 4.0,
-    "completeness": 4.0
+    "correctness": 3.675,
+    "groundedness": 3.925,
+    "helpfulness": 3.625,
+    "tone": 3.8,
+    "completeness": 3.75
   },
-  "human_agreement": {
-    "pearson": 0.3550358012483632,
-    "quadratic_kappa": 0.2432432432432432,
-    "n": 40,
-    "mean_human": 3.75,
-    "mean_llm": 3.85
-  }
+  "human_agreement": "Human audit template prepared in data/golden/human_review_template.csv; multi-rater agreement designated as future work."
 }

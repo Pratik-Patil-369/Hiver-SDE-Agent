@@ -13,7 +13,7 @@ RESULTS = ROOT / "results"
 
 BRAND_NAME = os.getenv("BRAND_NAME", "AmericanAir")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-flash-lite-latest")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.1-flash-lite")
 
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"  # used only if sentence-transformers installed
 TOP_K = 5

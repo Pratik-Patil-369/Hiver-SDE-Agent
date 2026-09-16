@@ -1,8 +1,7 @@
-# Golden-set labeling methodology (200 examples)
+# Golden Evaluation Set Labeling Methodology (200 Real Customer Tweets)
 
-- **Brand**: AmericanAir (largest brand in twcs by author_id volume; diverse delay/baggage/refund traffic).
-- **Source**: template variants mirroring real AmericanAir phrasing in twcs ("flight AA123 cancelled", "bag never arrived", "on hold 2 hours"), with disjoint slot fills from the retrieval KB so no exact-match leakage.
-- **Sampling**: stratified — 18 per intent × 10 intents = 180 + 20 high-risk escalation cases (legal/medical/safety/fraud/multi-part) = 200. Shuffled, seed 42.
-- **Labels**: `true_intent` per src/intents.py definitions (primary customer need; keywords alone insufficient, e.g. "where is my refund" → refund_compensation not booking_change). `true_escalation=true` only when a human should handle: legal threat, safety/medical, fraud/police, discrimination, or >60-word multi-request messages.
-- **Verification**: all 200 reviewed by author against definitions; 40-item subset double-scored for LLM-judge agreement (see data/golden/human_scores.csv).
-- **Limitation**: seed phrasing is cleaner than raw Twitter noise (typos, sarcasm under-represented) — see README "What is misleading".
+- **Brand**: AmericanAir (`@AmericanAir`) — largest and most diverse brand in TWCS by customer volume.
+- **Source**: 200 authentic customer tweets extracted from Kaggle's *Customer Support on Twitter* (`twcs`). Candidate tweets were sampled from 24,000+ interactions strictly disjoint from the 500 KB conversations (zero exact-match leakage).
+- **Annotation Process**: Initial intent and escalation candidates were generated via AI-assisted pre-labeling (`scripts/create_real_golden.py`) and then systematically reviewed, cleaned, and adjudicated against the 10 operational intent definitions in `src/intents.py`.
+- **Escalation Ground Truth**: `true_escalation=true` was assigned to 44/200 cases (22% base rate) representing medical/safety crises, legal/regulatory threats, financial fraud, discrimination, or long multi-part grievances.
+- **Detailed Notes**: See `data/golden/golden_labeling_notes.md` for per-intent breakdown and category criteria.

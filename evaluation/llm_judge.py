@@ -74,15 +74,19 @@ def judge_response(customer, historical_evidence, response):
         import google.generativeai as genai
         genai.configure(api_key=GEMINI_API_KEY)
         model = genai.GenerativeModel(GEMINI_MODEL)
-        prompt = f"""You are evaluating an AI customer-support response.
+        prompt = f"""You are evaluating an AI customer-support response for American Airlines.
 CUSTOMER: {customer}
 HISTORICAL EVIDENCE: {historical_evidence}
 AI RESPONSE: {response}
-Score 1-5: correctness, groundedness, helpfulness, tone, completeness.
-Penalize unsupported claims, invented policies, contradictions. Reward concise actionable replies.
-Return JSON only with correctness/groundedness/helpfulness/tone/completeness/overall/reason."""
+Score 1-5 integer for each: correctness, groundedness, helpfulness, tone, completeness.
+Penalize unsupported claims, invented policies, contradictions, or inappropriate tone. Reward concise, actionable, and empathetic replies.
+Provide an overall float score (1.0 to 5.0) and a brief reason string.
+Return valid JSON only with keys: correctness, groundedness, helpfulness, tone, completeness, overall, reason."""
         resp = model.generate_content(prompt)
-        text = resp.text.strip().replace("```json", "").replace("```", "")
+        text = resp.text.strip()
+        m = re.search(r"\{.*\}", text, re.DOTALL)
+        if m:
+            return json.loads(m.group(0))
         return json.loads(text)
     except Exception as e:
         j = heuristic_judge(customer, historical_evidence, response)
